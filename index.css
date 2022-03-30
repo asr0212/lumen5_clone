@@ -558,7 +558,7 @@ border-radius: 50%;
 
 .container-child6>#explore-buttons>button{
   font-size: 1.5rem;
-  padding: 16px 20px;
+  padding: 8px 20px;
   border: 1px solid #4636C5;
   border-radius: 28px;
   color: #0056b3;
@@ -570,3 +570,29 @@ border-radius: 50%;
   color: white;
   text-decoration: underline;
 }
+
+.vid-grid2{
+  width: 80%;
+  margin: auto;
+  margin-top: 2rem;
+  box-sizing:  border-box;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.vid-grid2>div{
+  height: 15rem;
+  width: 28rem;
+  margin:  1rem;
+  margin-bottom: 2rem;
+  border-radius: 22px;
+  overflow: hidden;
+}
+
+.vid-grid2>div>iframe{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
