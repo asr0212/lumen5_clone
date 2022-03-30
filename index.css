@@ -1,4 +1,6 @@
-
+*{
+  font-family: sans-serif;
+}
 
 .navbar{
   width : 85%;
@@ -26,10 +28,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar-right>div,select,button{
+.navbar-right>div,select,button,p{
   /* border: 1px solid black; */
   margin: auto;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 400;
   /* border: none; */
 }
@@ -37,7 +39,7 @@
   width: 90px;
   height: 60px;
   color: #4636C5;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   border-radius:  38px;;
   border: 1px solid  #5846F6  ;  
@@ -64,7 +66,7 @@
 .navbar>.navbar-right>select{
   /* border: 1px solid black; */
   margin: auto;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
   border: none;
@@ -535,4 +537,36 @@ border-radius: 50%;
 
 .container-child6{
   height: 1000px;
+  margin-top: 100px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.container-child6>h1{
+  font-size: 3.5rem;
+  font-weight: bold;
+  line-height: 60px;
+}
+
+.container-child6>#explore-buttons{
+  width: 70%;
+  margin: auto;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.container-child6>#explore-buttons>button{
+  font-size: 1.5rem;
+  padding: 16px 20px;
+  border: 1px solid #4636C5;
+  border-radius: 28px;
+  color: #0056b3;
+  background-color: transparent;
+}
+
+#explore-buttons>button:hover{
+  background-color: #4636C5;
+  color: white;
+  text-decoration: underline;
 }
