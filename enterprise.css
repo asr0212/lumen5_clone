@@ -1,0 +1,163 @@
+*{
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #24282F;
+}
+
+.navbar{
+  width : 85%;
+  height: 100px;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #24282F;
+}
+.logo-img>img{
+  margin: 0;
+  height: 100%;
+}
+.navbar-right{
+  margin: 0;
+  display: flex;
+  width: 50%;
+  height: 100%;
+  /* border: 1px solid black; */
+  justify-content: space-between;
+  font-size: large;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-right>div,select,button,p{
+  /* border: 1px solid black; */
+  margin: auto;
+  font-size: 20px;
+  font-weight: 400;
+  background: none;
+  color: white;
+  /* border: none; */
+}
+.navbar>.navbar-right>button{
+  width: 90px;
+  height: 60px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  border-radius:  38px;;
+  border: 1px solid  white  ;  
+  background-color: none;
+}
+
+.navbar>.navbar-right>#signup{ 
+  background-color: #5846F6;
+  color: white;
+  border: none;
+  width: 110px;
+  
+}
+.navbar>.navbar-right>button:hover{
+  background-color: #4636C5;
+  color:#FAFAFB;
+}
+.navbar>.navbar-right>#signup:hover{ 
+  background-color: #4636C5;;
+  color: white;
+  width: 110px;
+  
+}
+
+.navbar>.navbar-right>select{
+  /* border: 1px solid black; */
+  margin: auto;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: 'Poppins', sans-serif;
+  border: none;
+}
+.navbar-right>div{
+  /* border: 1px solid black; */
+  margin: auto;
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
+  width: 15%;
+}
+
+.container-child1{
+  background-color:#24282F;
+  color: white;
+  height: 750px;
+}
+
+#child1{
+  margin: auto;
+  height: 600px;
+  width: 65%;
+  /* border: 1px solid black; */
+  font-family: sans-serif;
+  display: flex;
+  overflow: visible;
+  justify-content: space-between;
+}
+
+#child1-text{
+  width: 43%;
+  padding-left: 0px;
+}
+#enterprise{
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-size: 22px;
+  line-height: 38px;
+  padding-right: 120px;
+}
+#child1-text>#span{
+  margin-top: 30px;
+  font-size: 46px;
+  font-weight: bold;
+  line-height: 60px;
+  padding-right: 40px;
+  /* border: 1px solid black; */
+}
+
+#child1-text>#p-b{
+  margin-top: 30px;
+  font-family: sans-serif;
+  font-size: 27px;
+  line-height: 38px;
+  padding-right: 120px;
+  /* border: 1px solid black; */
+}
+
+#child1-text>div>button{
+  width: 200px;
+  height: 70px;
+  margin-top: 50px;
+  border-radius: 38px;
+  border: none;
+  background-color: #5846F6;
+  color: #FAFAFB;
+  font-size: 20px;
+}
+
+#child1-text>div>button:hover{
+  background-color:#4636C5;
+  color: #FAFAFB;
+  font-size: 20px;
+}
+
+#child1-img{
+  width: 53%;
+  padding-left: 100px;
+  margin-top: 160px;
+  margin-right: 0;
+  padding-left: 40px;
+  border: 1px solid white;
+}
+
+#child1-img>img{
+  width: 110%;
+}
