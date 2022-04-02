@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io//favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <script src="https://kit.fontawesome.com/eaa3a81b04.js" crossorigin="anonymous"></script>
+    <style>
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        text-align: center;
+        }
+    #conText > div > h1{
+        font-family: 'Poppins',sans-serif;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        color: #24282f; 
+        }
+    #conText >div > h2{
+            font-size: 24px;
+            line-height: 45px;
+            font-weight: 600;
+            color: #24282f;
+            text-align: left;
+            margin-right:10%;
+            font-family: 'Poppins', sans-serif;;
+           
+        }
+    #container > #conText p{
+           
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #24282f;
+        }
+    #conText{
+         margin-top:80px ;
+        margin-left: 150px;
+        cursor: pointer;
+        text-align:left;
+        font-weight:bold;
+        font-size:xx-large;
+        }
+    #conText > div >button{
+        border-radius: 50px;
+        font-size: 16px;
+        padding: 20px;
+        background-color: #4e3ded;
+        color: #ffffff;
+        cursor: pointer;
+        
+    }
+    #conImg >img{
+      margin-top:30px;
+      margin-right:150px
+     
+    }
+
+
+    /* Medium screens - take min width and max width according to your screen sizes */
+    @media all and (min-width: 401px) and (max-width: 720px){
+        #container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        }
+    #conImg > img{
+            width: 450px;
+            height: 400px;
+        }
+
+    #container2{
+        grid-template-columns: auto;
+    }
+
+     #container3 > div> img{
+        height: 300px;
+        width: 250px;
+    }
+    #container3{
+        grid-template-columns: repeat(1,1fr);        
+    }
+
+    #container5 > img{
+        width: 450px;
+        height: 400px;
+    }
+
+    #container5{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
+      /* ------------Media------End------------ */
+
+
+
+
+    #container2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+        padding: 100px;
+        background-color: rgb(250, 250, 250);;
+    }
+
+    #div-one{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-two{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-three{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-four{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-five{
+        display: flex;
+    }
+    #div-six{
+        display: flex;
+    }
+    .note{
+        color: rgb(88, 70, 246);
+        font-size: 30px;
+    }
+    .con{
+        color: rgb(2, 211, 218);
+        font-size: 30px;
+        
+    }
+    .file{
+        color: rgb(248, 85, 142);
+        font-size: 30px;
+    }
+    .spekar{
+        color:rgb(73, 214, 110);
+        font-size: 30px;
+    }
+    .video{
+        color: rgb(255, 161, 1);
+        font-size: 30px;
+    }
+    .listen{
+        color: rgb(255, 75, 56);
+        font-size: 30px;
+    }
+    #container2 > div{
+        margin-left: 15%;
+        margin-right:15%;
+        text-align: justify;
+        
+    }
+    #container2>div h1{
+        font-size: 28px;
+        font-family: "Poppins",sans-serif;
+        font-weight: 700;
+        line-height: 37px;
+        text-align: left;
+        color: #24282f;   
+    }
+    #container2>div p{
+        font-family: "Poppins",sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        color: #24282f;
+    }
+
+
+    #container2 >div i{
+        margin-right: 20px;
+        
+    }
+    #container3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        background-color: rgb(255, 255, 255);
+        padding-top: 75px;
+        padding-bottom: 75px;
+        width: 80%;
+        margin-left: 11%;
+
+    }
+    #container3 > .con3-text{
+        margin-top: 95px;
+        margin-left: 20px;
+    }
+    #container3 > div >h1{
+        font-size: 42px;
+        font-weight: 700;
+        font-family: 'Poppins',sans-serif;
+        text-align: left;
+    }
+    #container3 > div > h2{
+        font-family: 'Poppins',sans-serif;
+        font-size: 26px;
+        line-height: 36px;
+        font-weight: 400;
+        letter-spacing: 0.05em;        
+    }
+
+    #container4{
+        background-color: rgb(250,250,250);
+        padding-top: 75px;
+        padding-bottom: 75px;
+        
+    }
+    
+    #container4 >div> h1{
+        text-align: center;
+        font-family: 'Poppins',sans-serif;
+        font-size: 40px;
+        font-weight: 700;    
+    }
+    #container4 >div> p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        color: #5846f6;
+        cursor: pointer;
+    }
+    #container4 >div> p:hover{
+        text-decoration: underline;
+    }
+    #container4> .con4-text {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .con4-text{
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 50px;
+    }
+    .con4-text> div h4{
+        color: #5846f6;
+        letter-spacing: .02em;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .con4-text> div>h2{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 34px;
+        text-align: left;
+    }
+    .con4-text> div>p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400px;
+        font-size: 17px;
+        letter-spacing: 0.05em;
+        line-height: 26px;
+        color: #24282f;
+        text-align: left;
+        margin-right: 80px;
+    }
+
+    #container5{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        background-color: rgb(255,255,255);
+        padding-top: 75px;
+        padding-bottom:75px;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    #container5 p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 45px;
+        color: #24282f;
+        text-align: left;
+        margin-top: 100px;
+        
+    }
+    
+    #container6{
+        background-color: rgb(250,250,250);
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    .con6-text{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        width: 70%;
+        margin: auto;
+    }
+    .con6-text > div{
+        /* border: 1px solid black; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+
+    .con6-text > div:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* cursor: pointer; */
+    }
+    .con6-text > div> img{
+        width: 100%;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+    .con6-text> div h4{
+        color: #24282f;
+        letter-spacing: .02em;
+        line-height: 1.5;
+        margin-left: 20px;
+    }
+    .con6-text> div h2{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+        color: #24282f;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+    .con6-text> div p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #24282f;
+        text-align: right;
+        padding: 20px;
+        letter-spacing: 0.05rem;
+    }
+    #container8{
+        background-color: #4e3ded;
+        padding: 75px;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        height: 320px;
+        width: 65%;
+        margin: auto;
+        margin-bottom: 70px;
+        margin-top: 100px;
+        
+    }
+
+    #container8 > div> h1{
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 20%;
+        margin-right: 20%;
+        line-height: 55px;
+        font-family: 'Poppins',sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+    }
+   
+    #container8 > div> h3{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 30px;
+        color: #ffffff;
+        margin-left: 20%;
+        margin-right: 20%;
+        
+    }
+    #container8 > div >button{
+        border-radius: 50px;
+        padding: 15px;
+        color: #4e3ded;
+        cursor: pointer;
+        background-color: #ffffff;        
+    }
+    
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="conText"><div><h1>Voiceover</h1></div>
+        <div><h2>Record your voice and add it to video in just a few clicks.</h2></div>
+        <div><p>Voiceover can help your video stand out in a crowd. Get the engagement you deserve by adding voiceover to your video content today.</p></div>
+        <div><button><span>Sign Up Free</span></button></div>
+    </div>
+    
+    <div id="conImg">
+        <img src="https://images.ctfassets.net/5ltrds677kah/952YcnPYM4TGtEF4XIGFc/a54e7dfd761f44cf6676310091d26dca/1.png?w=800" alt="">
+    </div>
+</div>
+<br><br><br><br>
+<div id="container2">
+<div id="div-one">
+    <div><i class="fa-solid fa-clipboard note"></i></div>
+    <div><h1>Personalize your marketing content</h1>
+    <p>Adding voice to video brings a personal touch to your marketing videos and makes your content instantly recognizable as your own.</p></div>
+</div>
+<div id="div-two">
+    <div><i class="fa-solid fa-user-group con"></i></div>
+    <div><h1>Build trust with your audience</h1>
+    <p>Encourage confidence in your brand by using a relatable human voice to help market your product or service.</p></div>
+</div>
+<div id="div-three">    
+    <div><i class="fa-solid fa-file-lines file"></i></div>
+    <div><h1>Bring your script to life</h1>
+    <p>Make your video content pop by using a voiceover.</p></div>
+</div>
+<div id="div-four">
+    <div><i class="fa-solid fa-bullhorn spekar"></i></div>
+    <div><h1>Keep your audience engaged</h1>
+    <p>A high-quality voiceover will ensure that your audience is really tuned in to and engaged with your video content.</p></div>
+</div>
+<div id="div-five">    
+    <div><i class="fa-solid fa-video video"></i></div>
+    <div><h1>Create intimate, emotive video content</h1>
+    <p>A voiceover connects with your audience on a deeper level — more than just words on a screen can.</p></div>
+</div>
+<div id="div-six">    
+    <div><i class="fa-solid fa-user listen"></i></div>
+    <div><h1>One-click recording</h1>
+    <p>Simply create your video and click to launch the voiceover feature. It’s that simple.</p></div>
+</div>
+</div>
+<div id="container3">
+    <div><img src="https://images.ctfassets.net/5ltrds677kah/2AcEARlZyYxhvpqHKyMrVr/43435e5063882a57478ef9b175424929/2.png?w=600" alt=""></div>
+    <div class="con3-text">
+    <h1>Adding Voice To Video - Made Easy</h1>
+    <h2>Add high-quality voiceover to your videos in minutes</h2>
+    </div>
+</div>
+<div id="container4">
+    <div>
+        <h1>Add voiceover to your video in three simple steps</h1>
+        <p>Get started for free →</p>
+    </div>
+    <div class="con4-text">
+        <div>
+            <h4>STEP 1</h4>
+            <h2>Sign up for free</h2>
+            <p>Sign up for the Lumen5 video maker for free and enter a blog post URL or copy and paste your text.</p>
+        </div>
+        <div>
+            <h4>STEP 2</h4>
+            <h2>Edit your video</h2>
+            <p>Use the video editor to add text animations, drag and drop GIFs, stickers, watermarks, and other media that will positively impact your branding.</p>
+        </div>
+        <div>
+            <h4>STEP 3</h4>
+            <h2>Record your voiceover</h2>
+            <p>When you’re happy with your video, launch the voiceover feature. Use it to record your vocal track over your video.</p>
+        </div>
+    </div>
+</div>
+<div id="container5">
+    <div><img src="https://images.ctfassets.net/5ltrds677kah/1jzBzbRe5nTVPV50CIoSAH/c4969737d9b92fa8cf8af6cd2447d009/3.png?w=600" alt=""></div>
+    <div><p>World-class video marketing content. Made in minutes. No video editing skills required. Sign up for free today to grow your brand.</p></div>
+</div>
+<div id="container6">
+    <div class="con6-text">
+        <div>
+            <img src="https://images.ctfassets.net/5ltrds677kah/1nHgkfdYbdgUQLEphHRgEH/2142c3c4c28cbfa10b760e11f6622c1f/Video-Marketing-How-to-Get-Started.jpg?w=300" alt="">
+            <h4>BLOG</h4>
+            <h2>Video Marketing: How to Get Started</h2>
+            <p>Read story →</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/5ltrds677kah/33lSSmYehhiNfSlNnrE7c6/cddc30773dbcace494a7aa4d111841f7/Three-Biggest-Digital-Marketing-Challenges-of-2020-.jpg?w=300" alt="">
+            <h4>BLOG</h4>
+            <h2>Three Biggest Digital Marketing Challenges</h2>
+            <p>Read story →</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/5ltrds677kah/1mLj1N4TO1oHaL8RjLuDRt/b19869141f25cbdcaee557833ea206c1/The-Ultimate-Marketing-Manager-Guide.jpg?w=300" alt="">
+            <h4>BLOG</h4>
+            <h2>The Ultimate Marketing Manager Guide</h2>
+            <p>Read story →</p>
+        </div>
+    </div>
+</div>
+<div id="container8">
+    <div>
+       <h1><span>Join 800,000+ companies that are using Lumen5 to tell their stories.</span></h1> 
+        
+    </div>
+    <div>
+        <h3>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in a breeze, without any technical expertise.</h3>
+    </div>
+    <div>
+        <button>Sign up free</button>
+    </div>
+</div>
+</body>
+</html>

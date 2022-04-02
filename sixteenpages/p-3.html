@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io//favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <script src="https://kit.fontawesome.com/eaa3a81b04.js" crossorigin="anonymous"></script>
+    <style>
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        text-align: center;
+        }
+    #conText > div > h1{
+        font-family: 'Poppins',sans-serif;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        color: #24282f; 
+        }
+    #conText >div > h2{
+            font-size: 24px;
+            line-height: 45px;
+            font-weight: 400;
+            color: #24282f;
+            text-align: left;
+            margin-right:10%;
+            font-family: 'Poppins', sans-serif;;
+           
+        }
+
+    #container > #conText p{
+           
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #24282f;
+        }
+    #conText{
+         margin-top:80px ;
+        margin-left: 150px;
+        cursor: pointer;
+        text-align:left;
+        font-weight:bold;
+        font-size:xx-large;
+        }
+    #conText > div >button{
+        border-radius: 50px;
+        font-size: 16px;
+        padding: 20px;
+        background-color: #4e3ded;
+        color: #ffffff;
+        cursor: pointer;
+        
+    }
+    #conImg >img{
+      margin-top:45px;
+      margin-right:150px;
+      height: 450px;
+     
+    }
+
+
+    /* Medium screens - take min width and max width according to your screen sizes */
+    @media all and (min-width: 401px) and (max-width: 720px){
+        #container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        }
+    #conImg > img{
+            width: 450px;
+            height: 400px;
+        }
+
+    #container2{
+        grid-template-columns: auto;
+    }
+
+     #container3 > div> img{
+        height: 300px;
+        width: 250px;
+    }
+    #container3{
+        grid-template-columns: repeat(1,1fr);        
+    }
+
+    #container5 > img{
+        width: 450px;
+        height: 400px;
+    }
+
+    #container5{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
+      /* ------------Media------End------------ */
+
+
+
+
+    #container2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+        padding: 100px;
+        background-color: rgb(250, 250, 250);;
+    }
+
+    #div-one{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-two{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-three{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-four{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-five{
+        display: flex;
+    }
+    #div-six{
+        display: flex;
+    }
+    .thumb{
+        color: rgb(88, 70, 246);
+        font-size: 30px;
+    }
+    .radio{
+        color: rgb(2, 211, 218);
+        font-size: 30px;
+        
+    }
+    .drop{
+        color: rgb(248, 85, 142);
+        font-size: 30px;
+    }
+    .trophy{
+        color:rgb(73, 214, 110);
+        font-size: 30px;
+    }
+    .gel{
+        color: rgb(255, 161, 1);
+        font-size: 30px;
+    }
+    .sen{
+        color: rgb(255, 75, 56);
+        font-size: 30px;
+    }
+    #container2 > div{
+        margin-left: 15%;
+        margin-right:15%;
+        text-align: justify;
+        
+    }
+    #container2>div h1{
+        font-size: 28px;
+        font-family: "Poppins",sans-serif;
+        font-weight: 700;
+        line-height: 37px;
+        text-align: left;
+        color: #24282f;   
+    }
+    #container2>div p{
+        font-family: "Poppins",sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        color: #24282f;
+    }
+
+
+    #container2 >div i{
+        margin-right: 20px;
+        
+    }
+    #container3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        background-color: rgb(255, 255, 255);
+        padding-top: 75px;
+        padding-bottom: 75px;
+        width: 80%;
+        margin-left: 11%;
+
+    }
+    #container3 > .con3-text{
+        margin-top: 95px;
+        margin-left: 20px;
+    }
+    #container3 > div >h1{
+        font-size: 42px;
+        font-weight: 700;
+        font-family: 'Poppins',sans-serif;
+        text-align: left;
+    }
+    #container3 > div > h2{
+        font-family: 'Poppins',sans-serif;
+        font-size: 26px;
+        line-height: 36px;
+        font-weight: 400;
+        letter-spacing: 0.05em;        
+    }
+
+    #container4{
+        background-color: rgb(250,250,250);
+        padding-top: 75px;
+        padding-bottom: 75px;
+        
+    }
+    
+    #container4 >div> h1{
+        text-align: center;
+        font-family: 'Poppins',sans-serif;
+        font-size: 40px;
+        font-weight: 700;    
+    }
+    #container4 >div> p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        color: #5846f6;
+        cursor: pointer;
+    }
+    #container4 >div> p:hover{
+        text-decoration: underline;
+    }
+    #container4> .con4-text {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .con4-text{
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 50px;
+    }
+    .con4-text> div h4{
+        color: #5846f6;
+        letter-spacing: .02em;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .con4-text> div>h2{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 34px;
+        text-align: left;
+    }
+    .con4-text> div>p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400px;
+        font-size: 17px;
+        letter-spacing: 0.05em;
+        line-height: 26px;
+        color: #24282f;
+        text-align: left;
+        margin-right: 80px;
+    }
+
+    #container5{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        background-color: rgb(255,255,255);
+        padding-top: 75px;
+        padding-bottom:75px;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    #container5 p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 45px;
+        color: #24282f;
+        text-align: left;
+        margin-top: 100px;
+        
+    }
+    
+    #container6{
+        background-color: rgb(250,250,250);
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    #container6>div>h1{
+        font-family: 'Poppins',sans-serif;
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 43px;
+        color: #24282f;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    #container6>div>p{
+        font-family: 'Poppins',sans-serif;
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #24282f;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .con6-text{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        width: 70%;
+        margin: auto;
+    }
+    .con6-text > div{
+        /* border: 1px solid black; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+
+    .con6-text > div:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* cursor: pointer; */
+    }
+    .con6-text > div> img{
+        width: 100%;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+    .con6-text> div h4{
+        color: #24282f;
+        letter-spacing: .02em;
+        line-height: 1.5;
+        margin-left: 20px;
+    }
+    .con6-text> div h2{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+        color: #24282f;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+    .con6-text> div p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #24282f;
+        text-align: right;
+        padding: 20px;
+        letter-spacing: 0.05rem;
+    }
+    #container8{
+        background-color: #4e3ded;
+        padding: 75px;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        height: 320px;
+        width: 65%;
+        margin: auto;
+        margin-bottom: 70px;
+        margin-top: 100px;
+        
+    }
+
+    #container8 > div> h1{
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 20%;
+        margin-right: 20%;
+        line-height: 55px;
+        font-family: 'Poppins',sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+    }
+   
+    #container8 > div> h3{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 30px;
+        color: #ffffff;
+        margin-left: 20%;
+        margin-right: 20%;
+        
+    }
+    #container8 > div >button{
+        border-radius: 50px;
+        padding: 15px;
+        color: #4e3ded;
+        cursor: pointer;
+        background-color: #ffffff;        
+    }
+    
+
+
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="conText"><div><h1>Photo Video Maker</h1></div>
+        <div><h2>An Online Video Maker and Photo Editor All in One.</h2></div>
+        <div><p>Our brains are hardwired to love images, but we are moved more by great videos. The Lumen5 video maker uses A.I. to design user-friendly video clips that send the right message.</p></div>
+        <div><button><span>Sign Up Free</span></button></div>
+    </div>
+    
+    <div id="conImg">
+        <img src="https://images.ctfassets.net/5ltrds677kah/7yAtNk1DWIdbQSymFAxn5L/b1258c42e961271764b6a7fa01d5d00c/1.png?w=800" alt="">
+    </div>
+</div>
+<br><br><br><br>
+<div id="container2">
+<div id="div-one">
+    <div><i class="fa-solid fa-thumbs-up thumb"></i></div>
+    <div><h1>Advance Your Social Media Marketing Efforts</h1>
+    <p>Take your social media marketing to the next level and easily create high-quality videos that engage your audience.</p></div>
+</div>
+<div id="div-two">
+    <div><i class="fa-solid fa-radio radio"></i></div>
+    <div><h1>Make Hassle-Free Videos</h1>
+    <p>You don’t need a background in video production to turn photos into stunning videos. Choose the right video template and the slideshow maker will do the rest.</p></div>
+</div>
+<div id="div-three">    
+    <div><i class="fa-solid fa-droplet drop"></i></div>
+    <div><h1>Deliver a Full Branding Experience</h1>
+    <p>Photos leave everything at face value, but videos help your audience fully relate to your business. Use Lumen5’s online video maker to create authentic videos that tell your brand’s story.</p></div>
+</div>
+<div id="div-four">
+    <div><i class="fa-solid fa-trophy trophy"></i></div>
+    <div><h1>Celebrate Special Moments</h1>
+    <p>Lumen5 is here to help you celebrate special moments through high-quality videos. Capture your company’s most important occasions with breathtaking video clips.</p></div>
+</div>
+<div id="div-five">    
+    <div><i class="fa-solid fa-image gel"></i></div>
+    <div><h1>Get Realistic Photos</h1>
+    <p>Never forget important snaps from memorable events: birthday parties, weddings, vacations, company get-togethers — they all come to life with the Lumen5 photo video maker.</p></div>
+</div>
+<div id="div-six">    
+    <div><i class="fa-solid fa-arrow-trend-up sen"></i></div>
+    <div><h1>Promote Your Business’s Brand</h1>
+    <p>Showcase your identity by incorporating photo collages and brand watermarks.</p></div>
+</div>
+</div>
+<div id="container3">
+    <div><img src="https://images.ctfassets.net/5ltrds677kah/5Z9vjC2foPlHuJ1bXnNZ2t/f1c6ef845b0bbcfc711955a2045be84b/2.png?w=600" alt=""></div>
+    <div class="con3-text">
+    <h1>Win the battle for attention</h1>
+    <h2>High-quality images always triumph</h2>
+    </div>
+</div>
+<div id="container4">
+    <div>
+        <h1>Create video clips in 3 easy steps</h1>
+        <p>Get started for free →</p>
+    </div>
+    <div class="con4-text">
+        <div>
+            <h4>STEP 1</h4>
+            <h2>Sign up for free</h2>
+            <p>Sign up for the Lumen5 video maker for free and enter a blog post URL or copy and paste your text.</p>
+        </div>
+        <div>
+            <h4>STEP 2</h4>
+            <h2>Edit your video</h2>
+            <p>Use the video editor to add text animations, drag and drop GIFs, stickers, watermarks, and other media that will positively impact your branding.</p>
+        </div>
+        <div>
+            <h4>STEP 3</h4>
+            <h2>Share your video</h2>
+            <p>Save or share your video to your desired social media platform.</p>
+        </div>
+    </div>
+</div>
+<div id="container5">
+    <div><p>World-class video marketing content. Made in minutes. No video editing skills required. Sign up for free today to grow your brand.</p></div>
+    <div><img src="https://images.ctfassets.net/5ltrds677kah/6SJ85nP4fiPuA27VDOMVaG/08c9872f9d6e22d0f2b6196873e7c8df/3.png?w=600" alt=""></div>
+</div>
+<div id="container6">
+    <div>
+        <h1>Tips and tricks for effortless video production</h1>
+        <p>Learn how our customers save time and boost engagement with Lumen5's video editor</p>
+    </div>
+    <div class="con6-text">
+        <div>
+            <img src="https://images.ctfassets.net/5ltrds677kah/1nHgkfdYbdgUQLEphHRgEH/2142c3c4c28cbfa10b760e11f6622c1f/Video-Marketing-How-to-Get-Started.jpg?w=300" alt="">
+            <h4>BLOG</h4>
+            <h2>Video Marketing: How to Get Started</h2>
+            <p>Read story →</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/5ltrds677kah/33lSSmYehhiNfSlNnrE7c6/cddc30773dbcace494a7aa4d111841f7/Three-Biggest-Digital-Marketing-Challenges-of-2020-.jpg?w=300" alt="">
+            <h4>BLOG</h4>
+            <h2>Three Biggest Digital Marketing Challenges</h2>
+            <p>Read story →</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/5ltrds677kah/1mLj1N4TO1oHaL8RjLuDRt/b19869141f25cbdcaee557833ea206c1/The-Ultimate-Marketing-Manager-Guide.jpg?w=300" alt="">
+            <h4>BLOG</h4>
+            <h2>The Ultimate Marketing Manager Guide</h2>
+            <p>Read story →</p>
+        </div>
+    </div>
+</div>
+<div id="container8">
+    <div>
+       <h1><span>Join 800,000+ companies that are using Lumen5 to tell their stories.</span></h1> 
+        
+    </div>
+    <div>
+        <h3>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in a breeze, without any technical expertise.</h3>
+    </div>
+    <div>
+        <button>Sign up free</button>
+    </div>
+</div>
+</body>
+</html>
