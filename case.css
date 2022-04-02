@@ -339,3 +339,14 @@
   border: none;
   border-radius: 36px;
 }
+
+.btn>button:hover{
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 80%;
+  color: #0056b3;
+  background-color: #e7dede;
+  border: none;
+  border-radius: 36px;
+}
