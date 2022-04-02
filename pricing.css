@@ -369,6 +369,10 @@ i{ color: rgb(185, 183, 183);}
   margin: auto;
   font-size:small;
 }
+.navbar>.navbar-right>div>p:hover{
+    cursor: pointer;
+}
+
 .dropdown{
   position: relative;
 }
