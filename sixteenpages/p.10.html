@@ -485,9 +485,236 @@
     border-radius: 36px;
   }
   
+
+  
+  .navbar{
+  width : 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 0;
+  background-color:#FAFAFB;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.logo-img{
+  margin-left: 7rem;
+}
+.logo-img>img{
+  margin: 0;
+  height: 100%;
+}
+.navbar-right{
+  margin-right: 6rem;
+  display: flex;
+  align-items: baseline;
+  flex-basis: auto;
+  justify-content: space-evenly;
+  width: 43%;
+  height: 100%;
+  letter-spacing: 1px;
+}
+.navbar-right>div{
+  margin: auto;
+  font-size: small;
+}
+.navbar>.navbar-right>div>p{
+  margin: auto;
+  font-size:small;
+  font-family: "Poppins", sans-serif;
+}
+.navbar>.navbar-right>div>p:hover{
+    cursor: pointer;
+}
+
+.dropdown{
+  position: relative;
+}
+.dropdown>.dropdown-menu{
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.8rem);
+  margin-top: 1rem;
+  border: 1px solid #bfbfca;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.dropdown>.select:focus+.dropdown-menu{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.information-grid{
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2,max-content);
+  gap: 1rem;
+}
+
+.dropdown-links{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dropdown-links>div{
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.dropdown-links>div>a{
+  text-decoration: none;
+  color: #191c21;
+  font-size: 16px;
+  line-height: 28px;
+}
+.dropdown-links>div:hover{
+  background-color: #F0F0F4;
+  
+}
+.navbar-right .select{
+  border: none;
+  font-size: small;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: transparent;
+}
+.navbar-right .select:hover{
+    border: none;
+    font-size: small;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: black;
+  }
+
+.navbar>.navbar-right>button{
+  width: 70px;
+  height: 40px;
+  margin: auto;
+  color: #4636C5;
+  font-size: small;
+  font-weight: 400;
+  border-radius:  38px;;
+  border: 1px solid  #5846F6  ;  
+  background-color: white;
+}
+
+
+.navbar>.navbar-right>#signup{ 
+  background-color: #5846F6;
+  color: white;
+  width: 80px;
+}
+.navbar>.navbar-right>button:hover{
+  background-color: #4636C5;
+  color:black;
+}
+.navbar>.navbar-right>#signup:hover{ 
+  background-color: #4636C5;;
+  color: white;
+  width: 80px; 
+}
+
     </style>
 </head>
 <body>
+    <div class="navbar">
+        <div class="logo-img">
+          <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="">
+        </div>
+        <div class="navbar-right">
+          <div class="dropdown">
+              <button class="select">Create</button>
+            <div class="dropdown-menu information-grid">
+              <div>
+                <div class="dropdown-links">
+                  <div><a class="link" style="display: block;" href="">Photo Video Maker</a></div>
+                  <div><a class="link" style="display: block;" href="">Facebook Video Maker</a></div>
+                  <div><a style="display: block;" href="">YouTube Video Maker</a></div>
+                  <div>
+                    <a class="link"style="display: block;" href="">Instagram Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Instagram Story Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Promo Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Video Ad Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Marketing Video Maker</a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div>
+                <div class="dropdown-links">
+                  <div>
+                    <a class="link" style="display: block;" href="">Linkdin Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Business Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Ecommerce Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Explainer Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Slideshow Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Education Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Video Editor</a>
+                  </div>
+                  <div>
+                    <a class="link"style="display: block;" href="">Voiceover</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p">
+            <p>Pricing</p>
+          </div>
+          <div class="p">
+            <p>Enterprise</p>
+          </div>
+          <div class="p">
+            <p>Case Studies</p>
+          </div>
+          <div class="dropdown">
+            <button class="select">Learn</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-links">
+                <div><a class="link" style="display: block;" href="">Resources</a></div>
+                <div><a class="link" style="display: block;" href="">Blog</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <button id="login">Login</button>
+          <button id="signup">SignUp</button>
+        </div>  
+      </div>
     <div id="container">
     <div id="conText"><div><h1>Marketing Video Maker</h1></div>
         <div><h2>Fast Track Your Brand Awareness with The Lumen5 Marketing Video Maker.</h2></div>
