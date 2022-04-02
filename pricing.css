@@ -426,6 +426,15 @@ i{ color: rgb(185, 183, 183);}
   padding: 0;
   background-color: transparent;
 }
+.navbar-right .select:hover{
+    border: none;
+    font-size: small;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: black;
+  }
 
 .navbar>.navbar-right>button{
   width: 70px;
@@ -446,7 +455,7 @@ i{ color: rgb(185, 183, 183);}
 }
 .navbar>.navbar-right>button:hover{
   background-color: #4636C5;
-  color:#FAFAFB;
+  color:black;
 }
 .navbar>.navbar-right>#signup:hover{ 
   background-color: #4636C5;;
