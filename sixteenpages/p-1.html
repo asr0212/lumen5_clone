@@ -563,7 +563,7 @@
     border: none;
     border-radius: 36px;
   }
-  
+   
   .navbar{
   width : 100%;
   height: 70px;
@@ -622,6 +622,89 @@
   transform: translateY(-10px);
   transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
 }
+
+.dropdown>.select:focus+.dropdown-menu{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.information-grid{
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2,max-content);
+  gap: 1rem;
+}
+
+.dropdown-links{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dropdown-links>div{
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.dropdown-links>div>a{
+  text-decoration: none;
+  color: #191c21;
+  font-size: 16px;
+  line-height: 28px;
+}
+.dropdown-links>div:hover{
+  background-color: #F0F0F4;
+  
+}
+.navbar-right .select{
+  border: none;
+  font-size: small;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: transparent;
+}
+.navbar-right .select:hover{
+    border: none;
+    font-size: small;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: black;
+  }
+
+.navbar>.navbar-right>button{
+  width: 70px;
+  height: 40px;
+  margin: auto;
+  color: #4636C5;
+  font-size: small;
+  font-weight: 400;
+  border-radius:  38px;;
+  border: 1px solid  #5846F6  ;  
+  background-color: white;
+}
+
+
+.navbar>.navbar-right>#signup{ 
+  background-color: #5846F6;
+  color: white;
+  width: 80px;
+}
+.navbar>.navbar-right>button:hover{
+  background-color: #4636C5;
+  color:black;
+}
+.navbar>.navbar-right>#signup:hover{ 
+  background-color: #4636C5;;
+  color: white;
+  width: 80px; 
+}
+
 
 .dropdown>.select:focus+.dropdown-menu{
   opacity: 1;
