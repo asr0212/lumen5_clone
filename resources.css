@@ -1,0 +1,128 @@
+*{ font-family: 'Poppins', sans-serif; }
+
+#head1, #head2, #head3{
+    margin: 100px auto 50px auto;
+    text-align: center;   
+    font-size: 40px;
+}
+
+#head3{ margin-top:150px; }
+
+#podcast{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    font-size: 20px;
+    line-height: 33px;
+    margin-bottom: 150px;
+}
+
+#podcast > div{
+    padding: 30px;
+}
+
+span{
+    color: rgb(58, 58, 252);
+}
+
+a{ 
+    text-decoration:none; 
+   color: rgb(58, 58, 252); 
+}
+
+span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+#ebook, #web{
+    width: 62%;   
+    margin: auto;
+    display: flex;    
+}
+
+#ebook > div, #web > div{
+    width: 30.5%;    
+    margin: auto;
+    margin-top: 0;   
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 10px; 
+}
+
+#ebook > div:hover, #web > div:hover{
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+#ebook a, #web a{
+    color: black;
+}
+
+#ebook > div > div, #web > div > div{      
+    padding: 0px 20px 20px 20px;  
+}
+
+#ebook > div > div > h5, #web > div > div > h5{
+   font-weight: 400;
+   color: gray;
+}
+
+#ebook > div > div >p, #web > div > div >p{
+    font-size: 20px;
+    line-height: 30px;
+    margin-top: -10px;
+}
+
+#ebook > div > div > h4, #web > div > div >h4{
+    text-align: right;
+    font-weight: 100;
+    margin-bottom: 10px;
+}
+
+#ebook img, #web img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#joinus{
+    width: 74%;
+    height: 430px;
+    margin: auto;
+    background-color: rgb(71, 71, 255);
+    border-radius: 20px;
+    margin-top: 135px;
+    margin-bottom: 70px;
+}
+
+#insidejoin{
+    width: 58%;    
+    margin: auto;    
+    color: white;
+    text-align: center;
+    padding-top: 45px;
+}
+
+#insidejoin > h1{
+    font-size: 40px;    
+}
+
+#insidejoin > p{
+    font-size: 24px;  
+    margin-top: 30px;  
+}
+
+#insidejoin > button{
+   color: blue;
+   background-color: white;
+   font-size: 18px;
+   padding: 18px 21px 18px 21px;
+   border-radius: 30px;   
+   border: none;
+   margin-top: 10px; 
+}
+
+#insidejoin > button:hover{
+    cursor: pointer;
+}
+

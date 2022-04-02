@@ -19,21 +19,26 @@
     display:flex;               
 }
 
-#duration > button{      
+#billmonthly, #billyearly{      
     font-size: 17px;
     padding: 15px 20px 15px 20px;
-    background-color: rgb(92, 89, 85);
+    background-color: rgb(80, 80, 104);
     color: white;
 }
 
-#duration > button:nth-child(1){
+#billmonthly{
     border-radius: 25px 0px 0px 25px;
     background-color: white;
     color: rgb(92, 89, 85);
     border-color: black;
 }
-#duration > button:nth-child(2){
+#billyearly{
     border-radius: 0px 25px 25px 0px ;
+}
+
+.Onclick{
+    color: white;
+    background-color: rgb(80, 80, 104);
 }
 
 #duration > button:hover{
@@ -69,6 +74,7 @@
 button:hover, #btndiv > button:hover{
     color: white;
     background-color: blue;
+    cursor: pointer;
 }
 
 #plans p, #pricingdes p { font-size: 13px;  }
@@ -103,16 +109,6 @@ button:hover, #btndiv > button:hover{
     margin-top: 125px;
     margin-bottom: 65px;
 }
-        
-#btndiv > button, #things > div > button{
-    border-color: blue;
-    border-radius: 25px;
-    color: blue;
-    background-color: white;
-    padding: 10px;
-    font-size: 17px;        
-}
-
 #btndiv > button:last-child, #things > div:nth-child(3) > button{
     color: white;
     background-color: blue;
@@ -121,6 +117,14 @@ button:hover, #btndiv > button:hover{
 #btndiv > button:last-child:hover, #things > div:nth-child(3) > button:hover{
     color: white;
     background-color: rgb(4, 4, 207);
+}        
+#btndiv > button, #things > div > button{
+    border-color: blue;
+    border-radius: 25px;
+    color: blue;
+    background-color: white;
+    padding: 10px;
+    font-size: 17px;        
 }
 
 #things > div > button:hover{
@@ -219,15 +223,15 @@ hr{
     text-align: center;   
 }
 
-i{ color: gray;}
+i{ color: rgb(185, 183, 183);}
+
+.fa-check{
+    color: lightgreen;
+}
 
 .table{  
     margin-bottom: 40px; 
     margin-top: 30px; 
-}
-
-.table > div:nth-child(even){
-    background-color: rgb(250, 246, 246);
 }
 
 .faq{ 

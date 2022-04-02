@@ -1,0 +1,265 @@
+*{ font-family: 'Poppins', sans-serif; }
+
+#navbar{
+    height: 80px;
+    /* border: 1px dashed black; */
+    display: flex;
+    justify-content: space-between;    
+}
+
+#logo{
+    width: 16%;
+    height: 100%;    
+    /*border: 1px solid black;   */
+}
+
+#options{
+    width: 40%;
+    height: 100%;
+    /* border: 1px solid black;    */
+    display: flex;
+    justify-content: right;
+}
+
+#options > div{   
+    /* border: 1px solid black; */
+    text-align: center; 
+    padding-top: 27px;
+    color: gray;
+    margin-right: 28px;
+}
+
+#logo > img{
+    width: 58%;
+    height: 48%;
+    margin: 18px 0px 0px 20px;
+}
+
+#heading{
+    height: 200px;
+    background-color:rgba(219, 226, 226, 0.899) ;
+    font-size: 44px;
+    font-weight: 700;
+    display: flex;
+    align-items:center ;
+    padding-left: 138px;
+}
+
+#div1{
+    width: 68%;
+    height: 295px;
+    background-color: rgb(239, 241, 242);
+    margin: auto;
+    margin-top: 85px;
+    /* border: 1px dashed teal;*/
+    border-radius: 10px;
+    display: flex;
+}
+
+#div1 > div{
+    height: 100%;
+    
+}
+
+#part1{
+    width: 30%;
+}
+#part2{
+    width: 70%;
+    padding: 15px 30px 0px 50px;
+}
+
+#part1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+#part2 > h4{
+    color: blueviolet;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+#part2 img{
+    height: 25px;
+    width: 25px;
+}
+
+#inpart2{
+    height: 55px;   
+   
+    display: flex;
+    justify-content: space-between;
+} 
+
+#inpart2 > div > p{
+    height: 0px;
+}
+
+#inpart2 h6{
+    color: rgb(109, 107, 107);
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+#inpart2 > div > i{
+    margin-right: 10px;
+    color: rgb(109, 107, 107);
+}
+
+.two{
+    display: flex;
+    align-items: flex-end;
+}
+
+.blogs{
+    width: 68%;    
+    background-color: rgb(247, 250, 251);
+    margin: auto;
+    margin-top: 35px;   
+    border-radius: 10px;
+    display: flex;
+}
+
+.left{
+    width: 30%;   
+}
+
+.right{
+    width: 70%;
+    padding: 15px 30px 35px 50px;    
+}
+
+.left >img{
+    height: 100%;  
+    width: 100%;
+    border-radius: 10px;
+}
+
+.insideright{
+    height: 55px;   
+   
+    display: flex;
+    justify-content: space-between;
+} 
+.right > h4{
+    color: blueviolet;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.insideright > div > p{
+    height: 0px;
+}
+
+.insideright h6{
+    color: rgb(109, 107, 107);
+    font-size: 12px;
+    font-weight: 400;
+    margin-top: 25px;
+}
+
+.insideright > div > i{
+    margin-right: 10px;
+    color: rgb(109, 107, 107);
+}
+
+#btns{
+    width: 68%;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 110px;
+}
+
+#btns > button{       
+    border-style: groove;
+    border-color: white;    
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: white;
+    font-weight: 100;
+}
+
+#btns > button:nth-child(1){
+    background-color: blueviolet;
+    color: white;
+    border-color: blueviolet;
+}
+
+#btns > button:hover{
+    cursor: pointer;
+    background-color: blueviolet;
+    color: white;
+    border-color: blueviolet;
+}
+
+#btns > button:nth-child(10):hover{
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+#lastdiv{
+    height: 190px;
+    background-color: black;
+}
+
+#lastdiv > .upper{
+    height: 60%;
+    width: 82%;
+    /*background-color: rgb(87, 87, 87); */
+    margin: auto;
+}
+
+.upper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.upper img{
+    height: 40px;
+}
+.upper > div{
+   
+    align-items: center;
+}
+
+.upper > div > div{
+    
+    display: flex;
+    align-items: center;
+    background-color: rgb(62, 62, 62);
+}
+
+.upper > div > div{
+    height: 18px;
+    padding: 9px;
+    margin-left: 14px;
+    font-size: 20px;
+    border-radius: 50%;
+}
+
+.upper p{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+#lastdiv > div:nth-child(2){
+    height: 40%;
+    width: 82%;
+    margin: auto;    
+    text-align: right;
+    font-size: 14px;
+    color: grey;
+    border-top: 1px solid rgb(51, 51, 51);
+}
+    
+
+
+
+
