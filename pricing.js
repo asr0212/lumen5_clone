@@ -1,4 +1,209 @@
-var PlansData = [
+
+document.querySelector("#billmonthly").addEventListener("click",BillMonth);
+
+function BillMonth()
+{
+    var btn = document.querySelector("#billmonthly");
+    btn.setAttribute("class","Onclick");
+    
+
+    document.querySelector("#plans").innerHTML = "";
+   
+    var PlansDataMonth = [
+        {
+            popular : "",
+            name : "Community",
+            discrip : "For casual video enthusiasts",
+            rate : "$0",
+            ratedis : "forever free",
+            saving : ""
+        },
+        {
+            popular : "",
+            name : "Creator",
+            discrip : "For individual content creators",
+            rate : "$15USD",
+            ratedis : "per month",
+            saving : ""
+        },
+        {
+            popular : "",
+            name : "Premium",
+            discrip : "For professional video storytellers",
+            rate : "$79USD",
+            ratedis : "per month",
+            saving : ""
+        },
+        {
+            popular : "POPULAR CHOICE",
+            name : "Business",
+            discrip : "For brands focused on reach and growth",
+            rate : "$199USD",
+            ratedis : "per month",
+            saving : ""
+        },
+        {
+            popular : "",
+            name : "Enterprise",
+            discrip : "For large-scale video teams",
+            rate : "Custom",
+            ratedis : "",
+            saving : ""
+        }
+    ];
+
+    PlansDataMonth.map(function(elem,ind,arr){
+        var div = document.createElement("div");
+        div.style.height = "10px";    
+    
+        var div1 = document.createElement("div");
+        div1.style.height = "100px";
+    
+        var div2 = document.createElement("div");
+        div2.style.height = "140px";
+    
+        var div3 = document.createElement("div");
+        var div4 = document.createElement("div");
+    
+        var popular = document.createElement("p");
+        popular.innerText = elem.popular;
+        var divIn = document.createElement("div");
+        divIn.append(popular);
+    
+        var h1 = document.createElement("h1");
+        h1.innerText = elem.name;
+    
+        var p1 = document.createElement("p");
+        p1.innerText = elem.discrip;
+    
+        var rate = document.createElement("h1");
+        rate.innerText = elem.rate;
+    
+        var p2 = document.createElement("p");
+        p2.innerText = elem.ratedis;
+    
+        var save = document.createElement("h3");
+        save.innerText = elem.saving;
+    
+        var btn = document.createElement("button");
+        btn.innerText = "Get Started";
+        btn.setAttribute("class","getStart");
+    
+        div.append(divIn);
+        div1.append(h1,p1);
+        div2.append(rate,p2,save);
+        div3.append(btn);
+    
+        div4.append(div,div1,div2,div3);
+    
+        document.querySelector("#plans").append(div4);
+    
+    });
+}
+
+document.querySelector("#billyearly").addEventListener("click",BillYear);
+
+function BillYear()
+{    
+    var btn = document.querySelector("#billyearly");
+    btn.setAttribute("class","Onclick");
+
+
+    document.querySelector("#plans").innerHTML = "";
+    
+    var PlansDataYear = [
+        {
+            popular : "",
+            name : "Community",
+            discrip : "For casual video enthusiasts",
+            rate : "$0",
+            ratedis : "forever free",
+            saving : ""
+        },
+        {
+            popular : "",
+            name : "Creator",
+            discrip : "For individual content creators",
+            rate : "$11USD",
+            ratedis : "per month, billed yearly",
+            saving : "Save 27%"
+        },
+        {
+            popular : "",
+            name : "Premium",
+            discrip : "For professional video storytellers",
+            rate : "$59USD",
+            ratedis : "per month, billed yearly",
+            saving : "Save 25%"
+        },
+        {
+            popular : "POPULAR CHOICE",
+            name : "Business",
+            discrip : "For brands focused on reach and growth",
+            rate : "$149USD",
+            ratedis : "per month, billed yearly",
+            saving : "Save 25%"
+        },
+        {
+            popular : "",
+            name : "Enterprise",
+            discrip : "For large-scale video teams",
+            rate : "Custom",
+            ratedis : "",
+            saving : ""
+        }
+    ];
+
+    PlansDataYear.map(function(elem,ind,arr){
+        var div = document.createElement("div");
+        div.style.height = "10px";    
+    
+        var div1 = document.createElement("div");
+        div1.style.height = "100px";
+    
+        var div2 = document.createElement("div");
+        div2.style.height = "140px";
+    
+        var div3 = document.createElement("div");
+        var div4 = document.createElement("div");
+    
+        var popular = document.createElement("p");
+        popular.innerText = elem.popular;
+        var divIn = document.createElement("div");
+        divIn.append(popular);
+    
+        var h1 = document.createElement("h1");
+        h1.innerText = elem.name;
+    
+        var p1 = document.createElement("p");
+        p1.innerText = elem.discrip;
+    
+        var rate = document.createElement("h1");
+        rate.innerText = elem.rate;
+    
+        var p2 = document.createElement("p");
+        p2.innerText = elem.ratedis;
+    
+        var save = document.createElement("h3");
+        save.innerText = elem.saving;
+    
+        var btn = document.createElement("button");
+        btn.innerText = "Get Started";
+        btn.setAttribute("class","getStart");
+    
+        div.append(divIn);
+        div1.append(h1,p1);
+        div2.append(rate,p2,save);
+        div3.append(btn);
+    
+        div4.append(div,div1,div2,div3);
+    
+        document.querySelector("#plans").append(div4);
+    
+    });
+}
+
+var PlansDataYear = [
     {
         popular : "",
         name : "Community",
@@ -41,8 +246,7 @@ var PlansData = [
     }
 ];
 
-
-PlansData.map(function(elem,ind,arr){
+PlansDataYear.map(function(elem,ind,arr){
     var div = document.createElement("div");
     div.style.height = "10px";    
 
@@ -88,7 +292,8 @@ PlansData.map(function(elem,ind,arr){
 
     document.querySelector("#plans").append(div4);
 
-})
+});
+
 
 
 var PlanDiscription = [
