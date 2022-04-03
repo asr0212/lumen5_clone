@@ -467,3 +467,7 @@ i{ color: rgb(185, 183, 183);}
   color: white;
   width: 80px; 
 }
+
+#login:hover{
+  color: white;
+}
