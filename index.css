@@ -948,3 +948,45 @@ margin-right: 1rem;
   border: none;
   border-radius: 36px;
 }
+table a{
+  text-decoration: none;
+  color: #c3c3d4;
+}
+#explore{
+height: 450px;
+width: 100%;
+margin-top: 50px;
+display: flex;
+background-color: #24282f;
+}
+#explore>div{
+width: 50%;
+}
+#explore img{
+padding-top: 50px;
+padding-left: 100px;
+height: 35px;
+width: 120px;
+}
+#explore p{
+font-size: 15px;
+color: #eae7ee;
+padding-left: 100px;
+padding-right: 62%;
+text-align: left;
+margin-top: 30px;
+}
+#tableBot{
+margin-top: 30px;
+width: 100%;
+line-height: 30px;
+font-size: 15px;
+}
+#tableBot>thead{
+text-align: left;
+height: 80px;
+color: #eae7ee;
+}
+#tableBot>tbody{
+color: #c3c3d4;
+}
