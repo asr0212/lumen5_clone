@@ -350,6 +350,7 @@ i{ color: rgb(185, 183, 183);}
 .logo-img>img{
   margin: 0;
   height: 100%;
+  width: auto;
 }
 .navbar-right{
   margin-right: 6rem;
@@ -465,4 +466,8 @@ i{ color: rgb(185, 183, 183);}
   background-color: #4636C5;;
   color: white;
   width: 80px; 
+}
+
+#login:hover{
+  color: white;
 }
