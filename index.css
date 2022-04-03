@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
 }
-
+.navbar a{
+  text-decoration: none;
+}
 .navbar{
   width : 100%;
   height: 70px;
