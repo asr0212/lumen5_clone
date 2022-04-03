@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Careers</title>
+        <style>
+            #carHT{
+                margin: auto;
+                text-align: center;
+                width: 80%;
+                margin-bottom: 50px;
+            }
+            #aJob{
+                width: 40%;
+                background-color: #fafafb;
+                margin-left: 20%;
+                padding: 20px 50px 20px 20px ;
+            }
+            .ajob1{
+                display: grid;
+                grid-template-columns: 1fr 4fr;
+                gap: 20px;
+            }
+            #aJob input{
+                height: 30px;
+                border: 1px solid #c9c9ca;
+                border-radius: 3px;
+            }
+            #aJob div>p{
+                text-align: right;
+            }
+            #aJob hr{
+                width: 100%;
+                border: .5px solid #c9c9ca;
+                margin-top: 30px;
+            }
+            .ajob2{
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+            }
+            #aJob button{
+                margin-top: 30px;
+                margin-left: 75%;
+                padding: 12px 15px 12px 15px;
+                border: none;
+                border-radius: 24px;
+                background-color: #00bcd4;
+                color: white;
+                cursor: pointer;
+            }
+            #aJob button:hover{
+                background-color: #2975ca;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="carHT">
+            <h2>CAREERS</h2>
+            <h1 style="font-size: 40px;">We're on a mission to make video creation simpler, faster and more intuitive — for everyone.</h1>
+        </div>
+        <div id="aJob">
+            <h2>Apply for this Job</h2>
+                <div class="ajob1">
+                    <p>First Name</p>
+                    <input id="aJob11" type="text"/>
+                </div>
+                <div class="ajob1">
+                    <p>Last Name</p>
+                    <input id="aJob12" type="text"/>
+                </div>
+                <div class="ajob1">
+                    <p>Email</p>
+                    <input id="aJob13" type="email"/>
+                </div>
+                <div class="ajob1">
+                    <p>Phone</p>
+                    <input id="aJob14" type="number"/>
+                </div>
+                <div class="ajob1">
+                    <p>Location(City)</p>
+                    <input id="aJob15" type="text"/>
+                </div>
+                <hr>
+                <div class="ajob2">
+                    <p style="text-align: left;">LinkedIn Profile</p>
+                    <input id="aJob21" type="url"/>
+                </div>
+                <div class="ajob2">
+                    <p style="text-align: left;">Website</p>
+                    <input id="aJob22" type="url"/>
+                </div>
+                <hr>
+                <button id="ApplyJob">Submit Application</button>
+        </div>
+    </body>
+</html>
+<script>
+        document.querySelector("#ApplyJob").addEventListener("click",myFunction);
+        var arr = JSON.parse(localStorage.getItem("jobData")) || [];
+        function myFunction(){
+            var obj = {
+                firstName: document.querySelector("#aJob11").value,
+                lastName: document.querySelector("#aJob12").value,
+                Email: document.querySelector("#aJob13").value,
+                Phone: document.querySelector("#aJob14").value,
+                location1: document.querySelector("#aJob15").value,
+                linkedin: document.querySelector("#aJob21").value,
+                web: document.querySelector("#aJob22").value
+            };
+            arr.push(obj);
+            localStorage.setItem("jobData",JSON.stringify(arr));
+        }
+</script>
