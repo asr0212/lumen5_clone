@@ -20,6 +20,7 @@ function loginFun() {
     }
     if (flag == true) {
         alert("Login Sucess");
+        window.location.href = "index.html";
     } else {
         alert("Login Failed")
     }
