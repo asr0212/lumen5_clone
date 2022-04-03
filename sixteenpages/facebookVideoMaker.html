@@ -1,0 +1,961 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io//favicon-16x16.png">
+    <link rel="manifest" href="/favicon_io/site.webmanifest">
+    <script src="https://kit.fontawesome.com/eaa3a81b04.js" crossorigin="anonymous"></script>
+    <style>
+    #container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+        text-align: center;
+        }
+    #conText > div > h1{
+        font-family: 'Poppins',sans-serif;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 43px;
+        color: #24282f; 
+        }
+    #conText >div > h2{
+            font-size: 24px;
+            line-height: 45px;
+            font-weight: 600;
+            color: #24282f;
+            text-align: left;
+            margin-right:10%;
+            font-family: 'Poppins', sans-serif;;
+           
+        }
+    #container > #conText p{
+           
+            font-family: sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 28px;
+            color: #24282f;
+        }
+    #conText{
+         margin-top:80px ;
+        margin-left: 150px;
+        cursor: pointer;
+        text-align:left;
+        font-weight:bold;
+        font-size:xx-large;
+        }
+    #conText > div >button{
+        border-radius: 50px;
+        font-size: 16px;
+        padding: 20px;
+        background-color: #4e3ded;
+        color: #ffffff;
+        cursor: pointer;
+        
+    }
+    #conImg >img{
+      margin-top:30px;
+      margin-right:150px
+     
+    }
+
+
+    /* Medium screens - take min width and max width according to your screen sizes */
+    @media all and (min-width: 401px) and (max-width: 720px){
+        #container{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        }
+    #conImg > img{
+            width: 450px;
+            height: 400px;
+        }
+
+    #container2{
+        grid-template-columns: auto;
+    }
+
+     #container3 > div> img{
+        height: 300px;
+        width: 250px;
+    }
+    #container3{
+        grid-template-columns: repeat(1,1fr);        
+    }
+
+    #container5 > img{
+        width: 450px;
+        height: 400px;
+    }
+
+    #container5{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
+      /* ------------Media------End------------ */
+
+
+
+
+    #container2{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        text-align: center;
+        padding: 100px;
+        background-color: rgb(250, 250, 250);;
+    }
+
+    #div-one{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-two{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-three{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-four{
+        display: flex;
+        margin-bottom: 50px;
+    }
+    #div-five{
+        display: flex;
+    }
+    #div-six{
+        display: flex;
+    }
+    .thumb{
+        color: rgb(88, 70, 246);
+        font-size: 30px;
+    }
+    .video{
+        color: rgb(2, 211, 218);
+        font-size: 30px;   
+    }
+    .wall{
+        color: rgb(248, 85, 142);
+        font-size: 30px;
+    }
+    .play{
+        color:rgb(73, 214, 110);
+        font-size: 30px;
+    }
+    .share{
+        color: rgb(255, 161, 1);
+        font-size: 30px;
+    }
+    .trophy{
+        color: rgb(255, 75, 56);
+        font-size: 30px;
+    }
+    #container2 > div{
+        margin-left: 15%;
+        margin-right:15%;
+        text-align: justify;
+        
+    }
+    #container2>div h1{
+        font-size: 28px;
+        font-family: "Poppins",sans-serif;
+        font-weight: 700;
+        line-height: 37px;
+        text-align: left;
+        color: #24282f;   
+    }
+    #container2>div p{
+        font-family: "Poppins",sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 21px;
+        text-align: left;
+        color: #24282f;
+    }
+
+
+    #container2 >div i{
+        margin-right: 20px;
+        
+    }
+    #container3{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        background-color: rgb(255, 255, 255);
+        padding-top: 75px;
+        padding-bottom: 75px;
+        width: 80%;
+        margin-left: 11%;
+
+    }
+    #container3 > .con3-text{
+        margin-top: 95px;
+        margin-left: 20px;
+    }
+    #container3 > div >h1{
+        font-size: 42px;
+        font-weight: 700;
+        font-family: 'Poppins',sans-serif;
+        text-align: left;
+    }
+    #container3 > div > h2{
+        font-family: 'Poppins',sans-serif;
+        font-size: 26px;
+        line-height: 36px;
+        font-weight: 400;
+        letter-spacing: 0.05em;        
+    }
+
+    #container4{
+        background-color: rgb(250,250,250);
+        padding-top: 75px;
+        padding-bottom: 75px;
+        
+    }
+    
+    #container4 >div> h1{
+        text-align: center;
+        font-family: 'Poppins',sans-serif;
+        font-size: 43px;
+        font-weight: 700;
+        letter-spacing: 0.02em;    
+    }
+    #container4 >div> p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 600;
+        font-size: 32px;
+        text-align: center;
+        color: #5846f6;
+        cursor: pointer;
+    }
+    #container4 >div> p:hover{
+        text-decoration: underline;
+    }
+    #container4> .con4-text {
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .con4-text{
+        display: flex;
+        margin-left: 150px;
+        margin-right: 150px;
+        margin-top: 50px;
+    }
+    .con4-text> div h4{
+        color: #5846f6;
+        letter-spacing: .02em;
+        line-height: 1.5;
+        text-align: left;
+    }
+    .con4-text> div>h2{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 700;
+        font-size: 31px;
+        line-height: 34px;
+        text-align: left;
+    }
+    .con4-text> div>p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400px;
+        font-size: 17px;
+        letter-spacing: 0.05em;
+        line-height: 26px;
+        color: #24282f;
+        text-align: left;
+        margin-right: 80px;
+    }
+
+    #container5{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        gap: 20px;
+        background-color: rgb(255,255,255);
+        padding-top: 75px;
+        padding-bottom:75px;
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    #container5 p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        font-size: 31px;
+        line-height: 45px;
+        color: #24282f;
+        text-align: left;
+        margin-top: 100px;
+        
+    }
+    
+    #container6{
+        background-color: rgb(250,250,250);
+        padding-top: 75px;
+        padding-bottom: 75px;
+    }
+    #container6>div>h1{
+        font-family: 'Poppins',sans-serif;
+        text-align: center;
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 43px;
+        color: #24282f;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    #container6>div>p{
+        font-family: 'Poppins',sans-serif;
+        text-align: center;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 29px;
+        color: #24282f;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .con6-text{
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: auto;
+        gap: 30px;
+        width: 70%;
+        margin: auto;
+    }
+    .con6-text > div{
+        /* border: 1px solid black; */
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        border-radius: 12px;
+        cursor: pointer;
+        margin-top: 40px;
+    }
+
+    .con6-text > div:hover{
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        /* cursor: pointer; */
+    }
+    .con6-text > div> img{
+        width: 100%;
+        border-top-right-radius: 12px;
+        border-top-left-radius: 12px;
+    }
+    .con6-text> div h4{
+        color: #24282f;
+        letter-spacing: .02em;
+        line-height: 1.5;
+        margin-left: 20px;
+    }
+    .con6-text> div h2{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 40px;
+        color: #24282f;
+        margin-left: 20px;
+        margin-right: 40px;
+    }
+    .con6-text> div p{
+        font-family: 'Poppins',sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 20px;
+        color: #24282f;
+        text-align: right;
+        padding: 20px;
+        letter-spacing: 0.05rem;
+    }
+    #container8{
+        background-color: #4e3ded;
+        padding: 75px;
+        border-radius: 20px;
+        color: white;
+        text-align: center;
+        height: 320px;
+        width: 65%;
+        margin: auto;
+        margin-bottom: 70px;
+        margin-top: 100px;
+        
+    }
+
+    #container8 > div> h1{
+        color: #ffffff;
+        text-align: center;
+        margin-bottom: 50px;
+        margin-left: 20%;
+        margin-right: 20%;
+        line-height: 55px;
+        font-family: 'Poppins',sans-serif;
+        font-size: 35px;
+        font-weight: 700;
+    }
+   
+    #container8 > div> h3{
+        font-family: sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 21px;
+        line-height: 30px;
+        color: #ffffff;
+        margin-left: 20%;
+        margin-right: 20%;
+        
+    }
+    #container8 > div >button{
+        border-radius: 50px;
+        padding: 15px;
+        color: #4e3ded;
+        cursor: pointer;
+        background-color: #ffffff;        
+    }
+    
+    
+.container-signup{
+    height: 24rem;
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    border: 1px solid;
+    color: white;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    width: 73%;
+    border-radius: 2rem;
+    background-image: url("https://storage.googleapis.com/lumen5-site-images/website-assets/cta-bg.png");
+  }
+  
+  .container-signup>p:first-child{
+    font-size: 37px;
+    margin-left: 20%;
+    width: 62%;
+    line-height:50px;
+    margin-top: 3rem;
+    font-weight: bold;
+  }
+  
+  .container-signup>p+p{
+    font-size: 21px;
+    margin-left: 20%;
+    width: 55%;
+    margin-top: 2rem;
+  }
+  
+  .container-signup>.btn{
+    width: 16%;
+    margin: auto;
+    height: 4rem;
+    margin-top: 2.4rem;
+  }
+  .btn>button{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 80%;
+    color: #0056b3;
+    background-color: white;
+    border: none;
+    border-radius: 36px;
+  }
+
+  .btn>button:hover{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 80%;
+    color: #0056b3;
+    background-color: #e7dede;
+    border: none;
+    border-radius: 36px;
+  }
+  
+  
+ 
+  .navbar{
+  width : 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 0;
+  background-color:#FAFAFB;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.logo-img{
+  margin-left: 7rem;
+}
+.logo-img>img{
+  margin: 0;
+  height: 100%;
+}
+.navbar-right{
+  margin-right: 6rem;
+  display: flex;
+  align-items: baseline;
+  flex-basis: auto;
+  justify-content: space-evenly;
+  width: 43%;
+  height: 100%;
+  letter-spacing: 1px;
+}
+.navbar-right>div{
+  margin: auto;
+  font-size: small;
+}
+.navbar>.navbar-right>div>p{
+  margin: auto;
+  font-size:small;
+  font-family: "Poppins", sans-serif;
+}
+.navbar>.navbar-right>div>p:hover{
+    cursor: pointer;
+}
+
+.dropdown{
+  position: relative;
+}
+.dropdown>.dropdown-menu{
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.8rem);
+  margin-top: 1rem;
+  border: 1px solid #bfbfca;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.dropdown>.select:focus+.dropdown-menu{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.information-grid{
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2,max-content);
+  gap: 1rem;
+}
+
+.dropdown-links{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dropdown-links>div{
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+  font-family: "Poppins", sans-serif;
+}
+.dropdown-links>div>a{
+  text-decoration: none;
+  color: #191c21;
+  font-size: 16px;
+  line-height: 28px;
+}
+.dropdown-links>div:hover{
+  background-color: #F0F0F4;
+  
+}
+.navbar-right .select{
+  border: none;
+  font-size: small;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: transparent;
+}
+.navbar-right .select:hover{
+    border: none;
+    font-size: small;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: black;
+  }
+
+.navbar>.navbar-right>button{
+  width: 70px;
+  height: 40px;
+  margin: auto;
+  color: #4636C5;
+  font-size: small;
+  font-weight: 400;
+  border-radius:  38px;;
+  border: 1px solid  #5846F6  ;  
+  background-color: white;
+}
+
+
+.navbar>.navbar-right>#signup{ 
+  background-color: #5846F6;
+  color: white;
+  width: 80px;
+}
+.navbar>.navbar-right>button:hover{
+  background-color: #4636C5;
+  color:black;
+}
+.navbar>.navbar-right>#signup:hover{ 
+  background-color: #4636C5;;
+  color: white;
+  width: 80px; 
+}
+
+
+.dropdown>.select:focus+.dropdown-menu{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.information-grid{
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2,max-content);
+  gap: 1rem;
+}
+
+.dropdown-links{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dropdown-links>div{
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.dropdown-links>div>a{
+  text-decoration: none;
+  color: #191c21;
+  font-size: 16px;
+  line-height: 28px;
+}
+.dropdown-links>div:hover{
+  background-color: #F0F0F4;
+  
+}
+.navbar-right .select{
+  border: none;
+  font-size: small;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: transparent;
+}
+.navbar-right .select:hover{
+    border: none;
+    font-size: small;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: black;
+  }
+
+.navbar>.navbar-right>button{
+  width: 70px;
+  height: 40px;
+  margin: auto;
+  color: #4636C5;
+  font-size: small;
+  font-weight: 400;
+  border-radius:  38px;;
+  border: 1px solid  #5846F6  ;  
+  background-color: white;
+}
+
+
+.navbar>.navbar-right>#signup{ 
+  background-color: #5846F6;
+  color: white;
+  width: 80px;
+}
+.navbar>.navbar-right>button:hover{
+  background-color: #4636C5;
+  color:black;
+}
+.navbar>.navbar-right>#signup:hover{ 
+  background-color: #4636C5;;
+  color: white;
+  width: 80px; 
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-img">
+          <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="">
+        </div>
+        <div class="navbar-right">
+          <div class="dropdown">
+              <button class="select">Create</button>
+            <div class="dropdown-menu information-grid">
+              <div>
+                <div class="dropdown-links">
+                  <div><a class="link" style="display: block;" href="">Photo Video Maker</a></div>
+                  <div><a class="link" style="display: block;" href="">Facebook Video Maker</a></div>
+                  <div><a style="display: block;" href="">YouTube Video Maker</a></div>
+                  <div>
+                    <a class="link"style="display: block;" href="">Instagram Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Instagram Story Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Promo Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Video Ad Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Marketing Video Maker</a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div>
+                <div class="dropdown-links">
+                  <div>
+                    <a class="link" style="display: block;" href="">Linkdin Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Business Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Ecommerce Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Explainer Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Slideshow Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Education Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Video Editor</a>
+                  </div>
+                  <div>
+                    <a class="link"style="display: block;" href="">Voiceover</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p">
+            <p>Pricing</p>
+          </div>
+          <div class="p">
+            <p>Enterprise</p>
+          </div>
+          <div class="p">
+            <p>Case Studies</p>
+          </div>
+          <div class="dropdown">
+            <button class="select">Learn</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-links">
+                <div><a class="link" style="display: block;" href="">Resources</a></div>
+                <div><a class="link" style="display: block;" href="">Blog</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <button id="login">Login</button>
+          <button id="signup">SignUp</button>
+        </div>  
+      </div>
+    <div id="container">
+    <div id="conText"><div><h1>Facebook Video Maker</h1></div>
+        <div><h2>Facebook Videos That Engage Your Audience.</h2></div>
+        <div><p>Deliver a single, clear message and your audience will feel more confident to take action. The time to maximize the video marketing strategy for your Facebook page is now.</p></div>
+        <div><button><span>Sign Up Free</span></button></div>
+    </div>
+    
+    <div id="conImg">
+        <img src="https://images.ctfassets.net/5ltrds677kah/3RHLOMZEEWhSSz35ySWB59/cb885f32af76dcb36dfa8cc27ba8293e/1.png?w=800" alt="">
+    </div>
+</div>
+<br><br><br><br>
+<div id="container2">
+<div id="div-one">
+    <div><i class="fa-solid fa-thumbs-up thumb"></i></div>
+    <div><h1>Elevate Your Facebook Page</h1>
+    <p>Video wins attention over text, every single time. Create flawless business videos with the Lumen5 video maker and engage your audience.</p></div>
+</div>
+<div id="div-two">
+    <div><i class="fa-solid fa-clapperboard video"></i></div>
+    <div><h1>Make Facebook Videos for Free</h1>
+    <p>With Lumen5, there’s no need to spend big on video ads. Start with a free account and create Facebook videos like a true pro.</p></div>
+</div>
+<div id="div-three">    
+    <div><i class="fa-solid fa-square wall"></i></div>
+    <div><h1>Forget About Video Editing Experience</h1>
+    <p>We get it — video creation is time-consuming. Let Lumen5 create your professional social media video content in no time. You focus on the story while we do the rest.</p></div>
+</div>
+<div id="div-four">
+    <div><i class="fa-solid fa-circle-play play"></i></div>
+    <div><h1>Create Professional Videos</h1>
+    <p>Make marketing videos that convert. Choose video templates or start from scratch. We have over 160 million copyright-free photos, GIFs, and audio tracks you can use.</p></div>
+</div>
+<div id="div-five">    
+    <div><i class="fa-solid fa-share-nodes share"></i></div>
+    <div><h1>Share Video Ads That Hit The Spot</h1>
+    <p>Use the Facebook Video Maker to innovate your video creation process and meet Facebook’s ever-changing algorithm.</p></div>
+</div>
+<div id="div-six">    
+    <div><i class="fa-solid fa-trophy trophy"></i></div>
+    <div><h1>Stand Out From The Crowd</h1>
+    <p>Use Facebook ads to reach your customers. Beat your competition by creating high-quality video ads for your audience.</p></div>
+</div>
+</div>
+<div id="container3">
+    <div><img src="https://images.ctfassets.net/5ltrds677kah/6kg3uYq6wn16zEObO00U64/4ea2505f348754664506523ffe7d610f/2.png?w=600" alt=""></div>
+    <div class="con3-text">
+    <h1>Advance your Facebook page with videos worth sharing</h1>
+    <h2>Create intros and Facebook video ads with Lumen5</h2>
+    </div>
+</div>
+<div id="container4">
+    <div>
+        <h1>Create a Facebook video in 3 easy steps</h1>
+        <p>Get started for free →</p>
+    </div>
+    <div class="con4-text">
+        <div>
+            <h4>STEP 1</h4>
+            <h2>Join Lumen5</h2>
+            <p>Join Lumen5 for free. Choose a Facebook video format: News Feed, Story or Carousel Ad. Then, choose a theme that helps to promote your brand.</p>
+        </div>
+        <div>
+            <h4>STEP 2</h4>
+            <h2>Edit your video</h2>
+            <p>Enter a blog post URL or copy & paste your text and let the video editor create a powerful slideshow video.</p>
+        </div>
+        <div>
+            <h4>STEP 3</h4>
+            <h2>Share to Facebook</h2>
+            <p>Preview and publish your video to Facebook or save it and share it later.</p>
+        </div>
+    </div>
+</div>
+<div id="container5">
+    <div><p>World-class video marketing content. Made in minutes. No video editing skills required. Sign up for free today to grow your brand.</p></div>
+    <div><img src="https://images.ctfassets.net/5ltrds677kah/1WiS2pPABSdrAvtvqhPKIh/d5ef2a0aef61f2a3ac3d4caa399eed0e/3.png?w=600" alt=""></div>
+</div>
+<div id="container6">
+    <div>
+        <h1>Tips and tricks for effortless video production</h1>
+        <p>Learn how our customers save time and boost engagement with Lumen5's video editor</p>
+    </div>
+    <div class="con6-text">
+        <div>
+            <img src="https://images.ctfassets.net/5ltrds677kah/1nHgkfdYbdgUQLEphHRgEH/2142c3c4c28cbfa10b760e11f6622c1f/Video-Marketing-How-to-Get-Started.jpg?w=300" alt="">
+            <h4>BLOG</h4>
+            <h2>Video Marketing: How to Get Started</h2>
+            <p>Read story →</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/5ltrds677kah/33lSSmYehhiNfSlNnrE7c6/cddc30773dbcace494a7aa4d111841f7/Three-Biggest-Digital-Marketing-Challenges-of-2020-.jpg?w=300" alt="">
+            <h4>BLOG</h4>
+            <h2>Three Biggest Digital Marketing Challenges</h2>
+            <p>Read story →</p>
+        </div>
+        <div>
+            <img src="https://images.ctfassets.net/5ltrds677kah/1mLj1N4TO1oHaL8RjLuDRt/b19869141f25cbdcaee557833ea206c1/The-Ultimate-Marketing-Manager-Guide.jpg?w=300" alt="">
+            <h4>BLOG</h4>
+            <h2>The Ultimate Marketing Manager Guide</h2>
+            <p>Read story →</p>
+        </div>
+    </div>
+</div>
+<div class="container-signup">
+    <p>Join 800,000+ companies that are using Lumen5 to tell their stories.</p>
+    <p>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in a breeze, without any technical expertise.</p>
+    <div class="btn">
+      <button>Sign up free</button>
+    </div>
+  </div>
+  <div id="explore">
+    <div>
+        <div>
+        <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png" />
+        <p>Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you create professional video content in minutes.</p>
+        </div>
+    </div>
+    <div>
+        <table id="tableBot">
+            <thead>
+                <tr>
+                    <th>EXPLORE</th>
+                    <th>VIDEO TOOLS</th>
+                    <th>VIDEO CREATORS</th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td><a href="about.html">About</a></td>
+                <td><a href="videotoolpages/addtexttovideo.html">Add Text to Video</a></td>
+                <td><a href="sixteenpages/videoEditor.html">Video Editor</a></td>
+            </tr>
+            <tr>
+                <td><a href="features.html">Features</a></td>
+                <td><a href="videotoolpages/cutvideo.html">Cut Video</a></td>
+                <td><a href="sixteenpages/photoVideoMaker.html">Photo Video Maker</a></td>
+            </tr>
+            <tr>
+                <td><a href="career.html">Careers</a></td>
+                <td><a href="videotoolpages/mergevideo.html">Merge Video</a></td>
+                <td><a href="sixteenpages/facebookVideoMaker.html">Facebook Video Maker</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHJw1oykMql0AAAAX_tIwp4loE1UAn5IWtc0BgqyLY5ZRRvQjXuyJRb6JU62tjWN35fRRYl6VLMx8dnfbmOIIsON4BUCLJkhxLh8cApfwYiwEossgHEyxBu6_1uJrgqFO3u03c=&originalReferer=https://lumen5.com/&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Flumen5">LinkedIn</a></td>
+                <td><a href="videotoolpages/compressvideo.html">Compress Video</a></td>
+                <td><a href="sixteenpages/youtubeIntroMaker.html">YouTube Intro Maker</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://help.lumen5.com/en/">Support</a></td>
+                <td><a href="videotoolpages/resizevideo.html">Resize Video</a></td>
+                <td><a href="sixteenpages/InstagramVideoMaker.html">Instagram Video Maker</a></td>
+            </tr>
+            <tr>
+                <td><a href="https://www.facebook.com/groups/lumen5/">Community group</a></td>
+                <td><a href="seeAllVT.html">See all</a></td>
+                <td><a href="seeAllVC.html">See all</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>About us</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <style>
+        #navbar1{
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            height: 60px;
+            margin: auto;
+            padding-top: 40px;
+        }
+        #navbar11{
+            width: 10%;
+            height: 100%;
+            padding: 10px;
+        }
+        #navbar11>img{
+            height: 60%;
+        }
+        #navbar12{
+            padding-top: 20px;
+            height: 60%;
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #navbar12>p{
+            font-size: 15px;
+        }
+        #aboutSign{
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            border: 2px solid white;
+            border-radius: 30px;
+        }
+        #about{
+            background-image: linear-gradient(to right,rgba(187, 59, 80, 0.62),rgba(187, 59, 80, 0.62)),url("https://storage.googleapis.com/lumen5-site-images/team-bg.jpg");
+            color: white;
+            height: 380px;
+            width: 100%;
+            margin-top: -30px;
+        }
+        #about h1{
+           text-align: center;
+           font-size: 45px;
+           padding-top: 50px;
+        }
+        #ourM{
+            margin-top: 80px;
+        }
+        #ourM>div{
+            padding: 0 15% 0 15%;
+            margin-top: 50px;
+           display: grid;
+           font-size: 20px;
+           grid-template-columns: repeat(2,1fr);
+           gap: 50px;
+           
+        }
+        #ourM img{
+            margin-top: 200px;
+           width: 100%;
+        }
+        #ProSol{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            gap: 100px;
+            padding: 0 15% 0 15%;
+            margin-top: 200px;
+        }
+        #ProSol img{
+             width: 100%;
+        }
+        #ProSol p{
+            font-size: 20px;
+        }
+        #workS{
+           background-color: #f5f5f5;
+           margin-top: 100px;
+           padding-top: 100px;
+           margin-bottom: 50px;
+        }
+        #workS>div{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          width: 70%;
+          margin: auto;
+          gap: 100px;
+        }
+        #workS img{
+            width: 100%;
+        }
+        #workS>div p{
+            margin-bottom: 50px;
+        }
+        .container-signup-about{
+  margin-top: 50px;
+  height: 24rem;
+  text-align: center;
+  color: white;
+  margin: auto;
+  width: 100%;
+  background-color: #3d87a3;
+  padding-top: 70px;
+}
+
+.container-signup-about>p:first-child{
+  font-size: 35px;
+  margin: auto;
+  width: 30%;
+  line-height:50px;
+  font-weight: bold;
+}
+
+.container-signup-about>p+p{
+  font-size: 21px;
+  margin: auto;
+  width: 30%;
+  margin-top: 2rem;
+}
+
+.container-signup-about>.btn{
+  width: 12%;
+  /* border: 1px solid black; */
+  margin: auto;
+  height: 4rem;
+  margin-top: 2.4rem;
+}
+.btn>button{
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 80%;
+  color: #0056b3;
+  background-color: white;
+  border: none;
+  border-radius: 36px;
+  font-size: 18px;
+}
+    </style>
+    <body>
+        <div id="about">
+            <div id="navbar1">
+                <div id="navbar11">
+                  <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png">
+                </div>
+                <div id="navbar12">
+                  <div>
+                    <p>Product</p>
+                  </div>
+                  <div>
+                    <p>Features</p>
+                  </div>
+                  <div>
+                    <p>Pricing</p>
+                  </div>
+                  <div>
+                    <p>Enterprise</p>
+                  </div>
+                  <div>
+                    <p>Learn</p>
+                  </div>
+                  <div>
+                      <p>Login</p>
+                  </div>
+                  <div id="aboutSign">
+                      <p>SIGN UP FREE</p>
+                  </div>
+                </div>
+            </div>
+            <h1>About</h1>
+        </div>
+        <div id="ourM">
+            <h1 style="text-align: center;">Our Mission</h1>
+            <div>
+                <p>Lumen5 is a video creation platform designed for brands and businesses to produce engaging video content for social posts, stories, and ads. Our goal is to enable anyone without training or experience to easily create amazing videos in minutes. Our technology enables marketing teams to focus on the story and narrative while relying on our system to do the heavy lifting.</p>
+                <p>Not only does our platform offer tools to make videos, Lumen5 takes it a step further to supply all the resources needed to make thumb-stopping videos. Our built-in media library offers access to millions of stock footage, photos, and soundtracks. This means that our users have access to everything they need without having to record or purchase any digital assets externally.</p>
+            </div>
+            <img src="https://storage.googleapis.com/lumen5-site-images/team-pic1.png"/>
+        </div>
+        <div id="ProSol">
+            <div>
+                <h1>The problem</h1>
+                <p>Video content has been rapidly transforming the marketing landscape and video content has quickly claimed the spotlight as the single most popular form of storytelling. However, tools for producing video content have not evolved quickly enough to meet this new demand. Many experts are required to produce a video such as scriptwriters, photographers, cinematographers, audio engineers, video editors, and more. The video production process is complicated, time-consuming, and extremely expensive.</p>
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/about-problem1.png" />
+            </div>
+            <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/about-solution1.png"/>
+            </div>
+            <div>
+                <h1>Our solution</h1>
+                <p>Video editing is a time-consuming process because it requires a lot of small tweaks and fine tuning. Using Machine Learning, we automate these tasks to help our users create quality videos with minimal time, effort, and training. For example, the duration of each scene is algorithmically determined based on the number of words in the scene, text positioning is intelligently placed to avoid covering important subjects such as human faces, important keywords are automatically emphasized and highlighted with your brand color, and a credit scene is generated at the end of each video to help you stay compliant with copyright laws.</p>
+            </div>
+        </div>
+        <div id="workS">
+            <h1 style="text-align: center;">Here's how Lumen5 works</h1>
+            <h3 style="text-align: center;">Work smarter, not harder</h3>
+            <div>
+                <div>
+                    <img src="https://storage.googleapis.com/lumen5-site-images/workflow.png" />
+                </div>
+                <div>
+                    <h1>01</h1>
+                    <h2>Write a script, choose a template, or enter a link</h2>
+                    <p>Using Natural Language Processing algorithms, our system will automatically create a storyboard for you.</p>
+                    <h1>02</h1>
+                    <h2>Our A.I. will find the perfect audiovisuals</h2>
+                    <p>Using Computer Vision technology, our system will find relevant visuals and audio relevant to your content.</p>
+                    <h1>03</h1>
+                    <h2>Add your branding and call-to-action</h2>
+                    <p>Upload your logo, add your watermark, customize your style and include a call-to-action to drive conversion.</p>
+                    <h1>04</h1>
+                    <h2>Download and share the video</h2>
+                    <p>Videos on Facebook get 10x more reach. Platforms like Google and Twitter also rank videos above other types of posts.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-signup-about">
+            <p>Join 800,000+ businesses creating videos using Lumen5</p>
+            <p>Engage your audience and grow your brand on social media with professional video content.</p>
+            <div class="btn">
+              <button>SIGN UP FREE</button>
+            </div>
+        </div>
+        <div id="explore">
+            <div>
+                <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png" />
+                <p>Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you create professional video content in minutes.</p>
+                </div>
+            </div>
+            <div>
+                <table id="tableBot">
+                    <thead>
+                        <tr>
+                            <th>EXPLORE</th>
+                            <th>VIDEO TOOLS</th>
+                            <th>VIDEO CREATORS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="about.html">About</a></td>
+                        <td><a href="videotoolpages/addtexttovideo.html">Add Text to Video</a></td>
+                        <td><a href="sixteenpages/videoEditor.html">Video Editor</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="features.html">Features</a></td>
+                        <td><a href="videotoolpages/cutvideo.html">Cut Video</a></td>
+                        <td><a href="sixteenpages/photoVideoMaker.html">Photo Video Maker</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="career.html">Careers</a></td>
+                        <td><a href="videotoolpages/mergevideo.html">Merge Video</a></td>
+                        <td><a href="sixteenpages/facebookVideoMaker.html">Facebook Video Maker</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHJw1oykMql0AAAAX_tIwp4loE1UAn5IWtc0BgqyLY5ZRRvQjXuyJRb6JU62tjWN35fRRYl6VLMx8dnfbmOIIsON4BUCLJkhxLh8cApfwYiwEossgHEyxBu6_1uJrgqFO3u03c=&originalReferer=https://lumen5.com/&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Flumen5">LinkedIn</a></td>
+                        <td><a href="videotoolpages/compressvideo.html">Compress Video</a></td>
+                        <td><a href="sixteenpages/youtubeIntroMaker.html">YouTube Intro Maker</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://help.lumen5.com/en/">Support</a></td>
+                        <td><a href="videotoolpages/resizevideo.html">Resize Video</a></td>
+                        <td><a href="sixteenpages/InstagramVideoMaker.html">Instagram Video Maker</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.facebook.com/groups/lumen5/">Community group</a></td>
+                        <td><a href="seeAllVT.html">See all</a></td>
+                        <td><a href="seeAllVC.html">See all</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

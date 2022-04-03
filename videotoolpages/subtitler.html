@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       *{
+           font-family:sans-serif
+       }
+       #container{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-gap:20px;
+        padding-top:70px;
+        margin-left: 40px
+       }
+       .d{
+           margin-bottom: 100px;
+       }
+
+       h1 > p{
+           font-size: 30px;
+           color:#5846f6;
+           cursor:pointer;
+       } 
+
+       button{
+           background-color:#5846f6;
+           color:white;
+           border-radius:20px;
+           cursor:pointer;
+           padding: 20px 20px 20px 20px;
+           font-size:20px;
+       }
+
+       .e{
+        margin-bottom: 100px; 
+       }
+       .m{
+           display:flex;
+           gap:40px;
+       }
+       .f{
+           margin-bottom:200px;
+       }
+
+       .c{
+           padding-top:50px;
+       }
+
+       .b{
+           font-size:30px;
+       }
+
+       img{
+           margin-top:20px;
+       }
+       
+       .a{
+           text-align:center;
+           font-size:50px;
+       }
+       .g{
+           font-size:40px;
+           text-align:center;
+       }
+
+       #middle{
+           display: flex;
+           margin-left:60px; 
+           margin-right:60px;
+           gap:20px;
+       }
+
+       h4{
+          color:#5d5df7;
+      }
+
+      .h{
+          font-size: 20px;
+      }
+
+       #middle1{
+           display: flex;
+           margin-left:35px; 
+           padding-top:150px;
+       }
+      
+      .i{
+          font-size:30px;
+          padding-top:150px;
+      }
+      .j{
+        font-size:30px;
+        padding-top:150px;
+        text-align:center;
+        width:70%;
+        margin-left:200px;
+      }
+
+      h5{
+        color:#24282f;
+    }
+
+      #middle2{
+          display: flex;
+          margin-left:80px;
+          gap:30px;
+          margin-right:100px;
+      }
+      #middle2 > div {
+          border: 0.2px solid #e6f7fa;
+          border-radius:10px;
+      }
+      .k{
+        padding-left:30px;
+       cursor:pointer;
+       margin-bottom:70px;
+    }
+    .k > p{
+        margin-left:200px;
+    }
+    
+    .blue{
+        color:#5846f6;
+    }
+    .sky{
+        color:#02d3da;
+    }
+    .rose{
+        color:#f8558e;
+    }
+    .green{
+        color:#49d66e;
+    }
+    .orange{
+        color:#ffa101;
+    }
+    .red{
+        color:#ff4b38;
+    }
+
+    
+.navbar{
+  width : 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 0;
+  background-color:#FAFAFB;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.logo-img{
+  margin-left: 7rem;
+}
+.logo-img>img{
+  margin: 0;
+  height: 100%;
+}
+.navbar-right{
+  margin-right: 6rem;
+  display: flex;
+  align-items: baseline;
+  flex-basis: auto;
+  justify-content: space-evenly;
+  width: 43%;
+  height: 100%;
+  letter-spacing: 1px;
+}
+.navbar-right>div{
+  margin: auto;
+  font-size: small;
+}
+.navbar>.navbar-right>div>p{
+  margin: auto;
+  font-size:small;
+}
+.navbar>.navbar-right>div>p:hover{
+    cursor: pointer;
+}
+
+.dropdown{
+  position: relative;
+}
+.dropdown>.dropdown-menu{
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.8rem);
+  margin-top: 1rem;
+  border: 1px solid #bfbfca;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.dropdown>.select:focus+.dropdown-menu{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.information-grid{
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2,max-content);
+  gap: 1rem;
+}
+
+.dropdown-links{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dropdown-links>div{
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.dropdown-links>div>a{
+  text-decoration: none;
+  color: #191c21;
+  font-size: 16px;
+  line-height: 28px;
+}
+.dropdown-links>div:hover{
+  background-color: #F0F0F4;
+  
+}
+.navbar-right .select{
+  border: none;
+  font-size: small;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: transparent;
+}
+.navbar-right .select:hover{
+    border: none;
+    font-size: small;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: black;
+  }
+
+.navbar>.navbar-right>button{
+  width: 70px;
+  height: 40px;
+  margin: auto;
+  color: #4636C5;
+  font-size: small;
+  font-weight: 400;
+  border-radius:  38px;;
+  border: 1px solid  #5846F6  ;  
+  background-color: white;
+}
+
+.navbar>.navbar-right>#signup{ 
+  background-color: #5846F6;
+  color: white;
+  width: 80px;
+}
+.navbar>.navbar-right>button:hover{
+  background-color: #4636C5;
+  color:black;
+}
+.navbar>.navbar-right>#signup:hover{ 
+  background-color: #4636C5;;
+  color: white;
+  width: 80px; 
+}
+
+
+.container-signup{
+    height: 24rem;
+    text-align: center;
+    border: 1px solid;
+    color: white;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    width: 73%;
+    border-radius: 2rem;
+    background-image: url("https://storage.googleapis.com/lumen5-site-images/website-assets/cta-bg.png");
+  }
+  
+  .container-signup>p:first-child{
+    font-size: 37px;
+    margin-left: 20%;
+    width: 62%;
+    line-height:50px;
+    margin-top: 3rem;
+    font-weight: bold;
+  }
+  
+  .container-signup>p+p{
+    font-size: 21px;
+    margin-left: 20%;
+    width: 55%;
+    margin-top: 2rem;
+  }
+  
+  .container-signup>.btn{
+    width: 16%;
+    margin: auto;
+    height: 4rem;
+    margin-top: 2.4rem;
+  }
+  .btn>button{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 80%;
+    color: #0056b3;
+    background-color: white;
+    border: none;
+    border-radius: 36px;
+  }
+
+  .btn>button:hover{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 80%;
+    color: #0056b3;
+    background-color: #e7dede;
+    border: none;
+    border-radius: 36px;
+  }
+    </style> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-img">
+          <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="">
+        </div>
+        <div class="navbar-right">
+          <div class="dropdown">
+              <button class="select">Create</button>
+            <div class="dropdown-menu information-grid">
+              <div>
+                <div class="dropdown-links">
+                  <div><a class="link" style="display: block;" href="">Photo Video Maker</a></div>
+                  <div><a class="link" style="display: block;" href="">Facebook Video Maker</a></div>
+                  <div><a style="display: block;" href="">YouTube Video Maker</a></div>
+                  <div>
+                    <a class="link"style="display: block;" href="">Instagram Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Instagram Story Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Promo Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Video Ad Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Marketing Video Maker</a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div>
+                <div class="dropdown-links">
+                  <div>
+                    <a class="link" style="display: block;" href="">Linkdin Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Business Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Ecommerce Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Explainer Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Slideshow Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Education Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Video Editor</a>
+                  </div>
+                  <div>
+                    <a class="link"style="display: block;" href="">Voiceover</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p">
+            <p>Pricing</p>
+          </div>
+          <div class="p">
+            <p>Enterprise</p>
+          </div>
+          <div class="p">
+            <p>Case Studies</p>
+          </div>
+          <div class="dropdown">
+            <button class="select">Learn</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-links">
+                <div><a class="link" style="display: block;" href="">Resources</a></div>
+                <div><a class="link" style="display: block;" href="">Blog</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <button id="login">Login</button>
+          <button id="signup">SignUp</button>
+        </div>  
+      </div>
+    <div id="container">
+        <div class="d">
+            <h1>Subtitler</h1>
+            <h2>Easily Add Subtitles to Video. </h2>
+            <p>85% of Facebook videos are viewed with no sound. Our subtitler tool lets your message be heard — even when there’s no audio. If you want to increase social media engagement, our easy-to-use subtitler is for you.</p>
+            <button onclick="window.location.href='https://lumen5.com/auth/signup/'">Sign up free</button>
+        </div>
+        <div class="e"><img src="https://images.ctfassets.net/5ltrds677kah/3o9QUoXILxllJUWvyt7aOp/fe47f4ecf04a6ebc61be72712c6d8cf4/1.png?w=500"></div>
+    <div class="m">
+        <div class="blue"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-lightning-fill" viewBox="0 0 16 16">
+            <path d="M5.52.359A.5.5 0 0 1 6 0h4a.5.5 0 0 1 .474.658L8.694 6H12.5a.5.5 0 0 1 .395.807l-7 9a.5.5 0 0 1-.873-.454L6.823 9.5H3.5a.5.5 0 0 1-.48-.641l2.5-8.5z"/>
+          </svg></div>
+        <div>
+        <h1>Fast Subtitle Maker</h1>
+        <p>This software is designed to make things simple. You can add video files and write subtitles for each clip in just a few minutes.</p>
+    </div>
+    </div>
+    <div class="m">
+        <div class="sky"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+            <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+          </svg></div>
+        <div>
+        <h1>Easy-to-use Interface</h1>
+        <p>This subtitler allows you to write captions and specify in which part of the video you want them to appear by simply sliding the bars.</p>
+    </div> 
+    </div> 
+     <div class="m">
+         <div class="rose"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+            <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+            <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+          </svg></div>
+         <div>
+         <h1>Completely Online</h1>
+         <p>You don’t need to download or install the subtitler to your computer or phone because everything works online. This not only speeds up the process but also makes it safer.</p>
+        </div>
+        </div> 
+     <div class="m">
+         <div class="green"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-shield-shaded" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 14.933a.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067v13.866zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+          </svg></div>
+         <div>
+        <h1>Premium Security</h1> 
+        <p>No one else besides you will ever have access to your files. We highly value privacy and security.</p>
+    </div>
+    </div> 
+     <div class="m">
+         <div class="orange"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-pc-display-horizontal" viewBox="0 0 16 16">
+            <path d="M1.5 0A1.5 1.5 0 0 0 0 1.5v7A1.5 1.5 0 0 0 1.5 10H6v1H1a1 1 0 0 0-1 1v3a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-3a1 1 0 0 0-1-1h-5v-1h4.5A1.5 1.5 0 0 0 16 8.5v-7A1.5 1.5 0 0 0 14.5 0h-13Zm0 1h13a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5ZM12 12.5a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0Zm2 0a.5.5 0 1 1 1 0 .5.5 0 0 1-1 0ZM1.5 12h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1 0-1ZM1 14.25a.25.25 0 0 1 .25-.25h5.5a.25.25 0 1 1 0 .5h-5.5a.25.25 0 0 1-.25-.25Z"/>
+          </svg></div>
+         <div>
+        <h1>Works With Any File Format</h1>  
+        <p>The subtitle maker is compatible with all the popular video and audio formats. This means you don’t have to worry about converting your files before uploading them to the platform.</p>
+    </div> 
+    </div>
+     <div class="m">
+         <div class="red"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-plus-circle" viewBox="0 0 16 16">
+            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+            <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+          </svg></div>
+         <div>
+        <h1>Complete Set of Features</h1>   
+        <p>Lumen5 offers every video editing tool you will need in one place. Besides adding captions to your video you can also merge audio, convert the file right away, and more.</p>
+    </div> 
+    </div>
+     <div>
+         <img src="https://images.ctfassets.net/5ltrds677kah/3ggz236YOd76sTX1xx1pPj/f82a95dc73ac0f6422ee9617f937d930/2.png?w=600"/>
+     </div>
+     <div class="f">
+     <h1 class="c">Add subtitles to your video online in just a few minutes</h1>
+     <p class="b">Write video captions and slide the bars to specify when they should appear</p>
+     </div>
+    </div>
+    <div><h1 class="a">How to add subtitles to your video in 3 steps</h1>
+         <h1 class="g"><p onclick="window.location.href='https://lumen5.com/auth/signup/'">Get started for free →</p></h1>
+    </div>
+    <div id="middle">
+        <div><h4>STEP 1</h4>
+        <h2>Upload your footage</h2>
+        <p class="h">Upload the video you want to subtitle. If your video is already online you can also paste a link.</p>
+        </div>
+        <div>
+            <h4>STEP 2</h4>  
+            <h2>Type and time the subtitles</h2>
+            <p class="h">Transcribe the text you want and space your subtitles on the video timeline. Our subtitler will put everything together for you.</p>
+        </div>
+        <div>
+            <h4>STEP 3</h4> 
+            <h2>Download the video</h2>  
+            <p class="h">Watch the preview and download your subtitled video. You can then share it directly on social media.</p>
+        </div>
+    </div>
+    <div id="middle1">
+        <div><img src="https://images.ctfassets.net/5ltrds677kah/6ViTkbL4cuSQTD2WLsnOoa/6cbc394c26801962afb0c3526cf918cf/3.png?w=600"/></div>
+        <div><p class="i">World-class video marketing content. Made in minutes. No video editing skills required. Sign up for free today to grow your brand.</p></div>
+    </div>
+    <div class="j"><h1>Tips and tricks for effortless video production</h1>
+        <h5>Learn how our customers save time and boost engagement with Lumen5</h5>
+    </div>
+    
+    <div id="middle2">
+        <div class="k">
+            <img src="https://images.ctfassets.net/5ltrds677kah/1nHgkfdYbdgUQLEphHRgEH/2142c3c4c28cbfa10b760e11f6622c1f/Video-Marketing-How-to-Get-Started.jpg?w=300"/>
+          <h3>BLOG</h3>
+         <h2>Video Marketing: How to Get Started</h2>
+         <p onclick="window.location.href='https://lumen5.com/learn/video-marketing/'">Read story →</p>
+         
+        </div>
+        <div class="k">
+            <img src="https://images.ctfassets.net/5ltrds677kah/33lSSmYehhiNfSlNnrE7c6/cddc30773dbcace494a7aa4d111841f7/Three-Biggest-Digital-Marketing-Challenges-of-2020-.jpg?w=300"/>
+            <h3>BLOG</h3>
+            <h2>Three Biggest Digital Marketing Challenges</h2>
+            <p onclick="window.location.href='https://lumen5.com/learn/three-biggest-digital-marketing-challenges-of-2019-and-what-to-do-about-them/'">Read story →</p> 
+        </div>
+        <div class="k"> 
+            <img src="https://images.ctfassets.net/5ltrds677kah/1mLj1N4TO1oHaL8RjLuDRt/b19869141f25cbdcaee557833ea206c1/The-Ultimate-Marketing-Manager-Guide.jpg?w=300"/>
+            <h3>BLOG</h3>
+            <h2>The Ultimate Marketing Manager Guide</h2>
+            <p onclick="window.location.href='https://lumen5.com/learn/marketing-manager/'">Read story →</p>
+        </div>
+    </div>
+    
+    <div class="container-signup">
+        <p>Join 800,000+ companies that are using Lumen5 to tell their stories.</p>
+        <p>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in a breeze, without any technical expertise.</p>
+        <div class="btn">
+          <button>Sign up free</button>
+        </div>
+      </div>
+</body>
+</html> 

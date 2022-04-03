@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>features</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <style>
+                #navbar1{
+            display: flex;
+            justify-content: space-between;
+            width: 95%;
+            height: 60px;
+            margin: auto;
+            padding-top: 40px;
+        }
+        #navbar11{
+            width: 10%;
+            height: 100%;
+            padding: 10px;
+        }
+        #navbar11>img{
+            height: 60%;
+        }
+        #navbar12{
+            padding-top: 20px;
+            height: 60%;
+            width: 50%;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #navbar12>p{
+            font-size: 15px;
+        }
+        #aboutSign{
+            align-items: center;
+            padding-left: 30px;
+            padding-right: 30px;
+            border: 2px solid white;
+            border-radius: 30px;
+        }
+            #feature{
+            background-image: linear-gradient(to right,rgba(119, 148, 226, 0.62),rgba(119, 148, 226, 0.62)),url("https://storage.googleapis.com/lumen5-site-images/features-bg3.jpg");
+            color: white;
+            height: 380px;
+            width: 100%;
+            margin-top: -30px;
+        }
+        #feature h1{
+           text-align: center;
+           font-size: 45px;
+           padding-top: 50px;
+        }
+        #box5{
+            width: 80%;
+            margin: auto;
+            margin-bottom: 100px;
+        }
+        #box5>div{
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 200px;
+            margin-top: 100px;
+        }
+        #box5I{
+            padding: 30px;
+        }
+        #box5II{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            row-gap: 50px;
+            column-gap: 50px;
+        }
+        hr{
+            margin-top: 80px;
+            border: 1px solid rgb(201, 201, 201);
+            width: 100%;
+        }
+        .colB{
+            color: #379caf;
+        }
+        .colP{
+            color: #ab92ce;
+        }
+        .colG{
+            color: #19c5aa;
+        }
+        .colO{
+            color: #ffad69;
+        }
+        .colR{
+            color: #f4798c;
+        }
+        .container-signup-about{
+  margin-top: 50px;
+  height: 24rem;
+  text-align: center;
+  color: white;
+  margin: auto;
+  width: 100%;
+  background-color: #3d87a3;
+  padding-top: 70px;
+}
+
+.container-signup-about>p:first-child{
+  font-size: 35px;
+  margin: auto;
+  width: 30%;
+  line-height:50px;
+  font-weight: bold;
+}
+
+.container-signup-about>p+p{
+  font-size: 21px;
+  margin: auto;
+  width: 30%;
+  margin-top: 2rem;
+}
+
+.container-signup-about>.btn{
+  width: 12%;
+  /* border: 1px solid black; */
+  margin: auto;
+  height: 4rem;
+  margin-top: 2.4rem;
+}
+.btn>button{
+  text-align: center;
+  margin: auto;
+  width: 100%;
+  height: 80%;
+  color: #0056b3;
+  background-color: white;
+  border: none;
+  border-radius: 36px;
+  font-size: 18px;
+}
+    </style>
+    <body>
+        <div id="feature">
+            <div id="navbar1">
+                <div id="navbar11">
+                  <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png">
+                </div>
+                <div id="navbar12">
+                  <div>
+                    <p>Product</p>
+                  </div>
+                  <div>
+                    <p>Features</p>
+                  </div>
+                  <div>
+                    <p>Pricing</p>
+                  </div>
+                  <div>
+                    <p>Enterprise</p>
+                  </div>
+                  <div>
+                    <p>Learn</p>
+                  </div>
+                  <div>
+                      <p>Login</p>
+                  </div>
+                  <div id="aboutSign">
+                      <p>SIGN UP FREE</p>
+                  </div>
+                </div>
+            </div>
+            <h1>Features</h1>
+        </div>
+        <div id="box5">
+            <div>
+               <div id="box5I">
+                   <h1 class="colB">Text to Video</h1>
+                   <p>Easily transform articles and blog posts into video content</p>
+               </div>
+               <div id="box5II">
+                   <div>
+                       <h1 class="colB">Enter a link</h1>
+                       <p>Simply enter a link to an article or blog post and Lumen5 will automatically fetch the content and populate your storyboard.</p>
+                   </div>
+                   <div>
+                       <h1 class="colB">Copy & paste</h1>
+                       <p>If your content is in an offline document, simply copy and paste the text into Lumen5 to begin building your video.</p>
+                   </div>
+                   <div>
+                    <h1 class="colB">RSS feeds</h1>
+                    <p>For a more automated approach, simply plug in RSS feeds and have video templates created automatically everyday!
+                    </p>
+                   </div>
+               </div>
+            </div>
+            <hr>
+            <div>
+                <div id="box5I">
+                    <h1 class="colP">Automated Workflow</h1>
+                    <p>Create videos in minutes with the assistance of A.I.</p>
+                </div>
+                <div id="box5II">
+                    <div>
+                        <h1 class="colP">Scene length</h1>
+                        <p>The length of each scene is dynamically determined by the system based on the amount of text in each segment.</p>
+                    </div>
+                    <div>
+                        <h1 class="colP">Text positioning</h1>
+                        <p>The positioning of text is intelligently calculated based on the composition of the media file you've chosen.</p>
+                    </div>
+                    <div>
+                     <h1 class="colP">Keyword highlighting</h1>
+                     <p>Machine learning is applied to natural language processing to highlight important keywords within each sentence.
+                     </p>
+                    </div>
+                </div>
+             </div>
+             <hr>
+             <div>
+                <div id="box5I">
+                    <h1 class="colG">Media Library</h1>
+                    <p>Searchable library with millions of free media files
+                    </p>
+                </div>
+                <div id="box5II">
+                    <div>
+                        <div>
+                        <h1 class="colG">Video clips</h1>
+                        <p>Make your video come to life with countless professional grade video clips that can help you tell your story.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <h1 class="colG">Still images</h1>
+                        <p>Easily access millions of photos available at your finger tips covering thousands of subject matters.</p>
+                    </div>
+                    <div></div>
+                    <div>
+                     <h1 class="colG">Music library</h1>
+                     <p>Choose from thousands of free audio files and background music tracks categorized by mood and genre.
+                     </p>
+                    </div>
+                </div>
+             </div>
+             <hr>
+             <div>
+                <div id="box5I">
+                    <h1 class="colO">Branding Options</h1>
+                    <p>Customize your videos to match the look and feel of your brand</p>
+                </div>
+                <div id="box5II">
+                    <div>
+                        <h1 class="colO">Brand colors</h1>
+                        <p>Choose from one of our preset colors or enter your own hex code to get the perfect color.</p>
+                    </div>
+                    <div>
+                        <h1 class="colO">Logo & watermark</h1>
+                        <p>Upload your own logo and display it at the end or throughout the video as a watermark.</p>
+                    </div>
+                    <div>
+                     <h1 class="colO">Font choices</h1>
+                     <p>Choose from a collection of beautiful fonts or upload your own custom font file.
+                     </p>
+                    </div>
+                </div>
+             </div>
+             <hr>
+             <div>
+                <div id="box5I">
+                    <h1 class="colR">Video formats</h1>
+                    <p>Optimize every video to improve performance and conversion rates</p>
+                </div>
+                <div id="box5II">
+                    <div>
+                        <h1 class="colR">Video resolution</h1>
+                        <p>You can choose to render your videos in 480p, 720p, or 1080p, giving you full control over video quality and file size.</p>
+                    </div>
+                    <div>
+                        <h1 class="colR">Aspect ratio</h1>
+                        <p>Render your videos in standard 16:9 landscape format, 1:1 square format or 9:16 vertical format for specialized social platforms like Instagram.</p>
+                    </div>
+                    <div>
+                     <h1 class="colR">Letterbox style</h1>
+                     <p>Enhance your messaging with a letterbox format which has been popularized by viral meme videos.
+                     </p>
+                    </div>
+                </div>
+             </div>
+        </div>
+        <div class="container-signup-about">
+            <p>Join 800,000+ businesses creating videos using Lumen5</p>
+            <p>Engage your audience and grow your brand on social media with professional video content.</p>
+            <div class="btn">
+              <button>SIGN UP FREE</button>
+            </div>
+        </div>
+        <div id="explore">
+            <div>
+                <div>
+                <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-white.png" />
+                <p>Lumen5 combines powerful A.I. with a simple drag-and-drop interface to help you create professional video content in minutes.</p>
+                </div>
+            </div>
+            <div>
+                <table id="tableBot">
+                    <thead>
+                        <tr>
+                            <th>EXPLORE</th>
+                            <th>VIDEO TOOLS</th>
+                            <th>VIDEO CREATORS</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td><a href="about.html">About</a></td>
+                        <td><a href="videotoolpages/addtexttovideo.html">Add Text to Video</a></td>
+                        <td><a href="sixteenpages/videoEditor.html">Video Editor</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="features.html">Features</a></td>
+                        <td><a href="videotoolpages/cutvideo.html">Cut Video</a></td>
+                        <td><a href="sixteenpages/photoVideoMaker.html">Photo Video Maker</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="career.html">Careers</a></td>
+                        <td><a href="videotoolpages/mergevideo.html">Merge Video</a></td>
+                        <td><a href="sixteenpages/facebookVideoMaker.html">Facebook Video Maker</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.linkedin.com/authwall?trk=gf&trkInfo=AQHJw1oykMql0AAAAX_tIwp4loE1UAn5IWtc0BgqyLY5ZRRvQjXuyJRb6JU62tjWN35fRRYl6VLMx8dnfbmOIIsON4BUCLJkhxLh8cApfwYiwEossgHEyxBu6_1uJrgqFO3u03c=&originalReferer=https://lumen5.com/&sessionRedirect=https%3A%2F%2Fca.linkedin.com%2Fcompany%2Flumen5">LinkedIn</a></td>
+                        <td><a href="videotoolpages/compressvideo.html">Compress Video</a></td>
+                        <td><a href="sixteenpages/youtubeIntroMaker.html">YouTube Intro Maker</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://help.lumen5.com/en/">Support</a></td>
+                        <td><a href="videotoolpages/resizevideo.html">Resize Video</a></td>
+                        <td><a href="sixteenpages/InstagramVideoMaker.html">Instagram Video Maker</a></td>
+                    </tr>
+                    <tr>
+                        <td><a href="https://www.facebook.com/groups/lumen5/">Community group</a></td>
+                        <td><a href="seeAllVT.html">See all</a></td>
+                        <td><a href="seeAllVC.html">See all</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+       *{
+           font-family:sans-serif
+       }
+       #container{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: auto;
+        grid-gap:20px;
+        padding-top:70px;
+        margin-left: 40px
+       }
+       .d{
+           margin-bottom: 100px;
+       }
+
+       h1 > p{
+           font-size: 30px;
+           color:#5846f6;
+           cursor:pointer;
+       } 
+
+       button{
+           background-color:#5846f6;
+           color:white;
+           border-radius:20px;
+           cursor:pointer;
+           padding: 20px 20px 20px 20px;
+           font-size:20px;
+       }
+
+       .e{
+        margin-bottom: 100px; 
+       }
+       .m{
+           display:flex;
+           gap:40px;
+       }
+       .f{
+           margin-bottom:200px;
+       }
+
+       .c{
+           padding-top:50px;
+       }
+
+       .b{
+           font-size:30px;
+       }
+
+       img{
+           margin-top:20px;
+       }
+       
+       .a{
+           text-align:center;
+           font-size:50px;
+       }
+       .g{
+           font-size:40px;
+           text-align:center;
+       }
+
+       #middle{
+           display: flex;
+           margin-left:60px; 
+           margin-right:60px;
+           gap:20px;
+       }
+
+       h4{
+          color:#5d5df7;
+      }
+
+      .h{
+          font-size: 20px;
+      }
+
+       #middle1{
+           display: flex;
+           margin-left:35px; 
+           padding-top:150px;
+       }
+      
+      .i{
+          font-size:30px;
+          padding-top:150px;
+      }
+      .j{
+        font-size:30px;
+        padding-top:150px;
+        text-align:center;
+        width:70%;
+        margin-left:200px;
+      }
+
+      h5{
+        color:#24282f;
+    }
+
+      #middle2{
+          display: flex;
+          margin-left:80px;
+          gap:30px;
+          margin-right:100px;
+      }
+      #middle2 > div {
+          border: 0.2px solid #e6f7fa;
+          border-radius:10px;
+      }
+      .k{
+        padding-left:30px;
+       cursor:pointer;
+       margin-bottom:70px;
+    }
+    .k > p{
+        margin-left:200px;
+    }
+    
+    .blue{
+        color:#5846f6;
+    }
+    .sky{
+        color:#02d3da;
+    }
+    .rose{
+        color:#f8558e;
+    }
+    .green{
+        color:#49d66e;
+    }
+    .orange{
+        color:#ffa101;
+    }
+    .red{
+        color:#ff4b38;
+    }
+
+    
+.navbar{
+  width : 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  margin: auto;
+  margin-top: 0;
+  background-color:#FAFAFB;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+.logo-img{
+  margin-left: 7rem;
+}
+.logo-img>img{
+  margin: 0;
+  height: 100%;
+}
+.navbar-right{
+  margin-right: 6rem;
+  display: flex;
+  align-items: baseline;
+  flex-basis: auto;
+  justify-content: space-evenly;
+  width: 43%;
+  height: 100%;
+  letter-spacing: 1px;
+}
+.navbar-right>div{
+  margin: auto;
+  font-size: small;
+}
+.navbar>.navbar-right>div>p{
+  margin: auto;
+  font-size:small;
+}
+.navbar>.navbar-right>div>p:hover{
+    cursor: pointer;
+}
+
+.dropdown{
+  position: relative;
+}
+.dropdown>.dropdown-menu{
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.8rem);
+  margin-top: 1rem;
+  border: 1px solid #bfbfca;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-10px);
+  transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
+}
+
+.dropdown>.select:focus+.dropdown-menu{
+  opacity: 1;
+  transform: translateY(0px);
+  pointer-events: auto;
+}
+
+.information-grid{
+  background-color: white;
+  display: grid;
+  grid-template-columns: repeat(2,max-content);
+  gap: 1rem;
+}
+
+.dropdown-links{
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dropdown-links>div{
+  padding: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.dropdown-links>div>a{
+  text-decoration: none;
+  color: #191c21;
+  font-size: 16px;
+  line-height: 28px;
+}
+.dropdown-links>div:hover{
+  background-color: #F0F0F4;
+  
+}
+.navbar-right .select{
+  border: none;
+  font-size: small;
+  letter-spacing: 1px;
+  margin: 0;
+  padding: 0;
+  color: black;
+  background-color: transparent;
+}
+.navbar-right .select:hover{
+    border: none;
+    font-size: small;
+    letter-spacing: 1px;
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    color: black;
+  }
+
+.navbar>.navbar-right>button{
+  width: 70px;
+  height: 40px;
+  margin: auto;
+  color: #4636C5;
+  font-size: small;
+  font-weight: 400;
+  border-radius:  38px;;
+  border: 1px solid  #5846F6  ;  
+  background-color: white;
+}
+
+.navbar>.navbar-right>#signup{ 
+  background-color: #5846F6;
+  color: white;
+  width: 80px;
+}
+.navbar>.navbar-right>button:hover{
+  background-color: #4636C5;
+  color:black;
+}
+.navbar>.navbar-right>#signup:hover{ 
+  background-color: #4636C5;;
+  color: white;
+  width: 80px; 
+}
+
+
+.container-signup{
+    height: 24rem;
+    text-align: center;
+    border: 1px solid;
+    color: white;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    width: 73%;
+    border-radius: 2rem;
+    background-image: url("https://storage.googleapis.com/lumen5-site-images/website-assets/cta-bg.png");
+  }
+  
+  .container-signup>p:first-child{
+    font-size: 37px;
+    margin-left: 20%;
+    width: 62%;
+    line-height:50px;
+    margin-top: 3rem;
+    font-weight: bold;
+  }
+  
+  .container-signup>p+p{
+    font-size: 21px;
+    margin-left: 20%;
+    width: 55%;
+    margin-top: 2rem;
+  }
+  
+  .container-signup>.btn{
+    width: 16%;
+    margin: auto;
+    height: 4rem;
+    margin-top: 2.4rem;
+  }
+  .btn>button{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 80%;
+    color: #0056b3;
+    background-color: white;
+    border: none;
+    border-radius: 36px;
+  }
+
+  .btn>button:hover{
+    text-align: center;
+    margin: auto;
+    width: 100%;
+    height: 80%;
+    color: #0056b3;
+    background-color: #e7dede;
+    border: none;
+    border-radius: 36px;
+  }
+    </style> 
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo-img">
+          <img src="https://storage.googleapis.com/lumen5-site-images/L5-logo/L5-logo-header.png" alt="">
+        </div>
+        <div class="navbar-right">
+          <div class="dropdown">
+              <button class="select">Create</button>
+            <div class="dropdown-menu information-grid">
+              <div>
+                <div class="dropdown-links">
+                  <div><a class="link" style="display: block;" href="">Photo Video Maker</a></div>
+                  <div><a class="link" style="display: block;" href="">Facebook Video Maker</a></div>
+                  <div><a style="display: block;" href="">YouTube Video Maker</a></div>
+                  <div>
+                    <a class="link"style="display: block;" href="">Instagram Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Instagram Story Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Promo Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Video Ad Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Marketing Video Maker</a>
+                  </div>
+                  
+                </div>
+              </div>
+              <div>
+                <div class="dropdown-links">
+                  <div>
+                    <a class="link" style="display: block;" href="">Linkdin Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Business Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Ecommerce Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Explainer Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Slideshow Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Education Video Maker</a>
+                  </div>
+                  <div>
+                    <a class="link" style="display: block;" href="">Video Editor</a>
+                  </div>
+                  <div>
+                    <a class="link"style="display: block;" href="">Voiceover</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p">
+            <p>Pricing</p>
+          </div>
+          <div class="p">
+            <p>Enterprise</p>
+          </div>
+          <div class="p">
+            <p>Case Studies</p>
+          </div>
+          <div class="dropdown">
+            <button class="select">Learn</button>
+          <div class="dropdown-menu information-grid">
+            <div>
+              <div class="dropdown-links">
+                <div><a class="link" style="display: block;" href="">Resources</a></div>
+                <div><a class="link" style="display: block;" href="">Blog</a></div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <button id="login">Login</button>
+          <button id="signup">SignUp</button>
+        </div>  
+      </div>
+    <div id="container">
+        <div class="d">
+            <h1>Resize Video</h1>
+            <h2>An Online Video Resizer to Share Any Type of Video on Any Social Media Platform.</h2>
+            <p>Edit your videos on Windows, Mac, or even using your phone. And the best part? All without losing quality.</p>
+            <button onclick="window.location.href='https://lumen5.com/auth/signup/'">Sign up free</button>
+        </div>
+        <div class="e"><img src="https://images.ctfassets.net/5ltrds677kah/iTAiaycBnwRsqQUHuwJje/477cd5fbfdb0dd4a10c38c22c595a1f1/1.png?w=500"></div>
+    <div class="m">
+        <div class="blue"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-arrows-expand" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13A.5.5 0 0 1 1 8zM7.646.146a.5.5 0 0 1 .708 0l2 2a.5.5 0 0 1-.708.708L8.5 1.707V5.5a.5.5 0 0 1-1 0V1.707L6.354 2.854a.5.5 0 1 1-.708-.708l2-2zM8 10a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 0 1 .708-.708L7.5 14.293V10.5A.5.5 0 0 1 8 10z"/>
+          </svg></div>
+        <div>
+        <h1>Easy Video Resizing</h1>
+        <p>We have default sizes that fit all the popular social media platforms ready for you. This means that you need to know the details for each platform’s size restrictions.</p>
+    </div>
+    </div>
+    <div class="m">
+        <div class="sky"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+            <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+          </svg></div>
+        <div>
+        <h1>Intuitive Interface</h1>
+        <p>The tool is designed to make the editing experience a breeze even for beginners. You don’t need any special video editing skills to resize your video — Lumen5 does the hard work for you.</p>
+    </div> 
+    </div> 
+     <div class="m">
+         <div class="rose"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
+            <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1V1Zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0Zm2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0ZM9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5ZM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5ZM1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2H1.5Z"/>
+          </svg></div>
+         <div>
+         <h1>All Formats Supported</h1>
+         <p>The resize video tool works with MP4, AVI, MOV, VOB, and any other file formats you might have.</p>
+        </div>
+        </div> 
+     <div class="m">
+         <div class="green"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-shield-shaded" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 14.933a.615.615 0 0 0 .1-.025c.076-.023.174-.061.294-.118.24-.113.547-.29.893-.533a10.726 10.726 0 0 0 2.287-2.233c1.527-1.997 2.807-5.031 2.253-9.188a.48.48 0 0 0-.328-.39c-.651-.213-1.75-.56-2.837-.855C9.552 1.29 8.531 1.067 8 1.067v13.866zM5.072.56C6.157.265 7.31 0 8 0s1.843.265 2.928.56c1.11.3 2.229.655 2.887.87a1.54 1.54 0 0 1 1.044 1.262c.596 4.477-.787 7.795-2.465 9.99a11.775 11.775 0 0 1-2.517 2.453 7.159 7.159 0 0 1-1.048.625c-.28.132-.581.24-.829.24s-.548-.108-.829-.24a7.158 7.158 0 0 1-1.048-.625 11.777 11.777 0 0 1-2.517-2.453C1.928 10.487.545 7.169 1.141 2.692A1.54 1.54 0 0 1 2.185 1.43 62.456 62.456 0 0 1 5.072.56z"/>
+          </svg></div>
+         <div>
+        <h1>Premium Software Security</h1> 
+        <p>You don’t have to worry about someone else having access to your files — our software has super-secure encryption.</p>
+    </div>
+    </div> 
+     <div class="m">
+         <div class="orange"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-wifi" viewBox="0 0 16 16">
+            <path d="M15.384 6.115a.485.485 0 0 0-.047-.736A12.444 12.444 0 0 0 8 3C5.259 3 2.723 3.882.663 5.379a.485.485 0 0 0-.048.736.518.518 0 0 0 .668.05A11.448 11.448 0 0 1 8 4c2.507 0 4.827.802 6.716 2.164.205.148.49.13.668-.049z"/>
+            <path d="M13.229 8.271a.482.482 0 0 0-.063-.745A9.455 9.455 0 0 0 8 6c-1.905 0-3.68.56-5.166 1.526a.48.48 0 0 0-.063.745.525.525 0 0 0 .652.065A8.46 8.46 0 0 1 8 7a8.46 8.46 0 0 1 4.576 1.336c.206.132.48.108.653-.065zm-2.183 2.183c.226-.226.185-.605-.1-.75A6.473 6.473 0 0 0 8 9c-1.06 0-2.062.254-2.946.704-.285.145-.326.524-.1.75l.015.015c.16.16.407.19.611.09A5.478 5.478 0 0 1 8 10c.868 0 1.69.201 2.42.56.203.1.45.07.61-.091l.016-.015zM9.06 12.44c.196-.196.198-.52-.04-.66A1.99 1.99 0 0 0 8 11.5a1.99 1.99 0 0 0-1.02.28c-.238.14-.236.464-.04.66l.706.706a.5.5 0 0 0 .707 0l.707-.707z"/>
+          </svg></div>
+         <div>
+        <h1>Online Resizer</h1>  
+        <p>Using a video resizer online means that you will not have to install or download anything to your device. This makes the process fast and safe.</p>
+    </div> 
+    </div>
+     <div class="m">
+         <div class="red"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+            <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+          </svg></div>
+         <div>
+        <h1>Top Security</h1>   
+        <p>Besides you, no one will ever have access to the files that you upload to the software. Your account is highly protected.</p>
+    </div> 
+    </div>
+     <div>
+         <img src="https://images.ctfassets.net/5ltrds677kah/4HBCtGkAR4KhCqd9qQnie9/7b7d91cb210457cd241e09c564cf1f14/2.png?w=600"/>
+     </div>
+     <div class="f">
+     <h1 class="c">Change video dimensions online with a few clicks</h1>
+     <p class="b">Customize size or choose a dimension from the suggested options</p>
+     </div>
+    </div>
+    <div><h1 class="a">How to resize your video online in 3 steps</h1>
+         <h1 class="g"><p onclick="window.location.href='https://lumen5.com/auth/signup/'">Get started for free →</p></h1>
+    </div>
+    <div id="middle">
+        <div><h4>STEP 1</h4>
+        <h2>Choose a video</h2>
+        <p class="h">Upload the file you wish to resize from your desktop, mobile, Google Drive, or Dropbox. You can also add a link to a YouTube video. Files up to 500 MB are completely free.</p>
+        </div>
+        <div>
+            <h4>STEP 2</h4>  
+            <h2>Resize your video</h2>
+            <p class="h">Once your video is uploaded, you can select the ideal dimension preset. You can also make zoom and crop adjustments. Then specify the best format for the output file.</p>
+        </div>
+        <div>
+            <h4>STEP 3</h4> 
+            <h2>Download your resized video</h2>  
+            <p class="h">If you’re happy with the result after watching the preview, your video is ready to be saved. To do that you just need to click the download button. If you prefer, you can also save it back to Dropbox or Google Drive.</p>
+        </div>
+    </div>
+    <div id="middle1">
+        <div><img src="https://images.ctfassets.net/5ltrds677kah/22SN5pABmakTOQYyahH2vM/9c603555d6900d1d428e798959a0ddeb/3.png?w=600"/></div>
+        <div><p class="i">World-class video marketing content. Made in minutes. No video editing skills required. Sign up for free today to grow your brand.</p></div>
+    </div>
+    <div class="j"><h1>Tips and tricks for effortless video production</h1>
+        <h5>Learn how our customers save time and boost engagement with Lumen5</h5>
+    </div>
+    
+    <div id="middle2">
+        <div class="k">
+            <img src="https://images.ctfassets.net/5ltrds677kah/1nHgkfdYbdgUQLEphHRgEH/2142c3c4c28cbfa10b760e11f6622c1f/Video-Marketing-How-to-Get-Started.jpg?w=300"/>
+          <h3>BLOG</h3>
+         <h2>Video Marketing: How to Get Started</h2>
+         <p onclick="window.location.href='https://lumen5.com/learn/video-marketing/'">Read story →</p>
+         
+        </div>
+        <div class="k">
+            <img src="https://images.ctfassets.net/5ltrds677kah/33lSSmYehhiNfSlNnrE7c6/cddc30773dbcace494a7aa4d111841f7/Three-Biggest-Digital-Marketing-Challenges-of-2020-.jpg?w=300"/>
+            <h3>BLOG</h3>
+            <h2>Three Biggest Digital Marketing Challenges</h2>
+            <p onclick="window.location.href='https://lumen5.com/learn/three-biggest-digital-marketing-challenges-of-2019-and-what-to-do-about-them/'">Read story →</p> 
+        </div>
+        <div class="k"> 
+            <img src="https://images.ctfassets.net/5ltrds677kah/1mLj1N4TO1oHaL8RjLuDRt/b19869141f25cbdcaee557833ea206c1/The-Ultimate-Marketing-Manager-Guide.jpg?w=300"/>
+            <h3>BLOG</h3>
+            <h2>The Ultimate Marketing Manager Guide</h2>
+            <p onclick="window.location.href='https://lumen5.com/learn/marketing-manager/'">Read story →</p>
+        </div>
+    </div>
+
+    <div class="container-signup">
+      <p>Join 800,000+ companies that are using Lumen5 to tell their stories.</p>
+      <p>Lumen5 is a video creation software that helps marketers, publishers, and brands create video content in a breeze, without any technical expertise.</p>
+      <div class="btn">
+        <button>Sign up free</button>
+      </div>
+    </div>
+</body>
+</html> 
