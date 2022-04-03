@@ -26,6 +26,7 @@
 .logo-img>img{
   margin: 0;
   height: 100%;
+  cursor: pointer;
 }
 .navbar-right{
   margin-right: 6rem;
@@ -40,6 +41,7 @@
 .navbar-right>div{
   margin: auto;
   font-size: small;
+  cursor: pointer;
 }
 .navbar>.navbar-right>div>p{
   margin: auto;
@@ -55,7 +57,7 @@
   margin-top: 1rem;
   border: 1px solid #bfbfca;
   opacity: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
   transform: translateY(-10px);
   transition: opacity 250ms ease-in-out, transform 250ms ease-in-out;
 }
@@ -939,6 +941,7 @@ margin-right: 1rem;
   margin: auto;
   height: 4rem;
   margin-top: 2.4rem;
+  cursor: pointer;
 }
 .btn>button{
   text-align: center;
@@ -949,6 +952,7 @@ margin-right: 1rem;
   background-color: white;
   border: none;
   border-radius: 36px;
+  cursor: pointer;
 }
 table a{
   text-decoration: none;
